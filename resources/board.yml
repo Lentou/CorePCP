@@ -1,0 +1,375 @@
+---
+# CorePCP Board Configuration
+# to do tomorrow
+board:
+  prefix: " §l§8«§r§9Board§l§8»§r§7"
+  desc: "§fthe board panel"
+  title: 
+    main: "§lBulletin Board"
+    lead: "§lLeaderboards"
+    wiki: "§lWikipedia"
+  content:
+    wiki:
+      - "§7Greetings, §b{player}"
+      - ""
+      - "§7Welcome to Wikipedia of §fPocket§bPinas"
+      - ""
+      - "§7Here you can read all"
+      - "§7Informations regarding on this server"
+    lead: ["§l§fTop in {type}§r", "\n§f{number}§7) §b{player} §7| §e{points}"]
+  buttons:
+    main:
+      wiki: ["§0Wikipedia\n§7Tap to See Guide", 0, "textures/ui/creative_icon"]
+      bcast: ["§0Broadcast\n§7Tap to Send Cast", 0, "textures/ui/broadcast_glyph_color"]
+      apply: ["§0Apply\n§7Tap to Inquire", 0, "textures/ui/Feedback"] # inquire for apply
+      feedb: ["§0Feedback\n§7Tap to Send Rating", 0, "textures/ui/feedIcon"]
+      suggst: ["§0Suggestion\n§7Tap to Suggest", 0, "textures/ui/infobulb"]
+      report: ["§0Report\n§7Tap to Report Issue", 0, "textures/ui/magnifyingGlass"]
+      lead: ["§0Leaderboards\n§7Tap to See Top Players", 0, "textures/ui/op"]
+    lead:
+      balance: ["§0Balance\n§7Tap to See Top Players", 0, ""]
+      strength: ["§0Strength\n§7Tap to See Top Players", 0, ""]
+      bounty: ["§0Bounty\n§7Tap to See Top Players", 0, ""]
+      streak: ["§0Streak\n§7Tap to See Top Players", 0, ""]
+      kills: ["§0Kills\n§7Tap to See Top Players", 0, ""]
+      deaths: ["§0Deaths\n§7Tap to See Top Players", 0, ""]
+      charm: ["§0Charm\n§7Tap to See Top Players", 0, ""]
+      level: ["§0Levels\n§7Tap to See Top Players", 0, ""]
+      elo: ["§0Elo's\n§7Tap to See Top Players", 0, ""]
+      quest: ["§0Quest Takers\n§7Tap to See Top Players", 0, ""]
+
+discord:
+  broadcast:
+    webhook: "https://discord.com/api/webhooks/858590248098594846/oo6_Bpg0P078Uq1XQnER8WnfgLotHcjPVvtefWrT1wzwmvyT7Oi21_H9psRaUy_Fwmf8"
+    title: "**{username}**"
+    color: 0x19ffaf
+    description:
+      "*Broadcast*:": "- {broadcast}"
+    footer: "Messenger: {staffname}"
+  feedback:
+    webhook: "https://discord.com/api/webhooks/858590177123237940/1cF4r_kIdADiiKscOm0A1B9ZI5SluvTKhPODifZL92DqrBJRb2IsCuiyVUHiHbI1nKfJ"
+    title: "**{username}**"
+    color: 0xffd859
+    description:
+      "*Rating*:": "- {rate}"
+      "*Review*:": "- {review}"
+    footer: "Reviewer: {staffname}"
+  suggestion:
+    webhook: "https://discord.com/api/webhooks/858590117483642920/aLrx9GFSG5iEPmluJp-gS8r7t_wsVbvrsLPyTKo2Zn1_PSWC5nV8fL3GDuqdWP_8qOjn"
+    title: "**{username}**"
+    color: 0xa6a183
+    description:
+      "*Title*:": "- {title}"
+      "*Reason*:": "- {desc}"
+    footer: "Suggestioner: {staffname}"
+  apply:
+    webhook: "https://discord.com/api/webhooks/858590642485592085/_XCumXsr339UBbsPosZkHx0Zi_6ijeJJKwmVgs7sluIJp_BuuUZxMd3rDTgPBwqqDs5v"
+    title: "**{username}**"
+    color: 0x96abff
+    footer: "Applicant: {staffname}"
+    desc: "Role: {position}"
+  report:
+    webhook: "https://discord.com/api/webhooks/858590650052247572/2BY1kwx0R44KUIHFbNjE0rM4hb9i20AmWgHSZKV33aIxjfqeLhJfzQXalLu2af8eOvCn"
+    title: "**{username}**"
+    color: 0xec6762
+    footer: "Reporter: {staffname}"
+    desc: "Reason: {position}"
+
+broadcast:
+  enable: true
+  cost:
+    input: 10000
+    dropdown: 5000
+  text:
+    close: "{prefix} Broadcast Form is currently Close."
+    notempty: "{prefix} You must not empty the custom broadcast (untoggle if not custom)"
+    empty: "{prefix} You must empty the custom broadcast before you proceed (toggle if custom)"
+    success: "{prefix} Successfully broadcast the message."
+    notenough: "{prefix} You dont have enough money to broadcast a message!"
+    cast: "{prefix} §b{player} : §7{msg}"
+  list:
+    - "is recruiting a Faction Members"
+    - "is finding a Faction"
+    - "is finding a Friend"
+    - "is asking for Help"
+    - "is finding a Spouse"
+    - "is auctioning an item"
+    - "is selling an item"
+    - "is asking for pvp"
+    - "is buying an item"
+  form:
+    title: "§lBroadcast"
+    toggle: "§7Enable Custom Broadcast?"
+    input: "§7Put any Message: (If Custom Broadcast is True)"
+    dropdown: "§7Select a Prefered Message:"
+    content:
+      - "§7Warning! Your broadcast will be recorded on discord,"
+      - "§7do not spam broadcast."
+      - ""
+      - "§7Custom Broadcast: §f$10,000 Balance"
+      - "§7Prefered Broadcast: §f$5,000 Balance"
+      - ""
+      - "§7Broadcasting here is also monitoring, so be careful"
+      - "§7putting any words here such as toxicity words."
+      - "§7It will might cause you 7-days ban if you did this kind of abuse"
+
+apply:
+  enable: false
+  text:
+    close: "{prefix} Application Form is currently Close."
+    sent: "{prefix} Your Application Form is now on process, please wait until the Staff see's your worth!"
+  position:
+    - "Trainee"
+    - "Architect"
+  fields:
+    - "What is your Real Name? * (To verify you)"
+    - "What is your Real Age? * (Must be Real)"
+    - "Why Should We Hire You? * (Any short Good Answer)"
+    - "Your Gender? * (Male or Female)"
+    - "Your Skills? * (For example, Building, Moderating etc)"
+    - "Are you agree to the terms and conditions? * (Yes or No)"
+  form:
+    title: "§lApplication"
+    dropdown: "§7Wanted Position:"
+    content:
+      - "§7Warning! Your application will be recorded on discord,"
+      - "§7do not spam applications."
+      - ""
+      - "§7You can leave the fields empty"
+      - "§7but questions with * are important."
+      - ""
+      - "§7If you take seriously the application,"
+      - "§7There's a chance that your form will approve."
+      - ""
+      - "§7Just calm down and Good luck answering"
+      - "§7the questions."
+      - ""
+      - "§7Dont worry, your privacy is safe with us."
+      - "§7- Staff Team"
+    pending:
+      - "§7Your response is now on pending"
+      - "§7Pls wait until the Staff see's your worth"
+      - ""
+      - "§7If you dont receive any feedbacks / pings"
+      - "§7From the above, it means its rejected or not "
+      - ""
+      - "§7Once we review your form and you spam"
+      - "§7the app form, automatically 7-Days Ban"
+      - ""
+      - "§7If you receive any feedback"
+      - "§7From the above, follow carefully what" 
+      - "§7the Staff wants to do for you"
+      - ""
+      - "§7Dont worry, all staffs are kind!"
+      - "§7Goodluck Chaser's!"
+      - "§7- Staff Team"
+
+feedback:
+  enable: true
+  text:
+    close: "{prefix} Feedback Form is currently closed"
+    empty: "{prefix} The review textbox is empty, put any text here"
+    success: "{prefix} Your feedback or review is uploaded on our discord server. Thank you for reviewing us!"
+  form:
+    title: "§lFeedback"
+    content:
+      - "§7Warning! Your feedback will be recorded on discord,"
+      - "§7do not spam feedback or reviews."
+      - ""
+      - "§7Rate our server to 1-5 Stars"
+      - "§7And give us a reason why you"
+      - "§7choose that rating."
+      - ""
+      - "§7This form will prove that we can"
+      - "§7improve our system to be better"
+      - "§7and easier."
+    slider: "§7Rating:"
+    input: "§7State your Review:"
+  rate:
+    - "1 Star"
+    - "2 Stars"
+    - "3 Stars"
+    - "4 Stars"
+    - "5 Stars"
+
+suggest:
+  enable: true
+  text:
+    empty: "{prefix} You must put any title and desc in suggestion textbox!"
+    success: "{prefix} Your suggestion is now posted on our discord, check them out!"
+    close: "{prefix} Suggestion Form is currently closed"
+  form:
+    title: "§lSuggestion"
+    content:
+      - "§7Warning! Your suggestion will be recorded on discord,"
+      - "§7do not spam suggestions."
+      - ""
+      - "§7Title of Suggestion example: Skyblock"
+      - "§7Description: Add Skyblock Server"
+    input:
+      title: "§7Title of Suggestion:"
+      desc: "§7Describe your Suggestion:"
+
+report:
+  enable: true
+  text:
+    close: "{prefix} Report Form is currently Close."
+    sent: "{prefix} Your Report Form is now on process, please wait until the Staff see's your worth!"
+  reason:
+    - "Harassment"
+    - "Offensive Profile"
+    - "Spamming Advertisements"
+    - "Suspected Cheater/Hacker"
+    - "Impersonating another player"
+    - "Exploiting Current Bugs"
+    - "Other Reason"
+  fields:
+    - "§7Player Name or Title of Issue: *"
+    - "§7Optional: Custom Reason"
+  form:
+    title: "§lReport"
+    dropdown: "§7Reasons:"
+    content:
+      - "§7Warning! Your report will be recorded on discord,"
+      - "§7do not spam applications."
+      - ""
+      - "§7You can leave the fields empty"
+      - "§7but questions with * are important."
+      - ""
+      - "§7State your reason why you report this issue"
+      - ""
+      - "§7Dont worry, your privacy is safe with us."
+      - "§7- Staff Team"
+    pending:
+      - "§7Your response is now on pending"
+      - "§7Pls wait until the Staff see's your worth"
+      - ""
+      - "§7If you dont receive any feedbacks / pings"
+      - "§7From the above, it means its rejected or not "
+      - ""
+      - "§7Once we review your form and you spam"
+      - "§7the report form, automatically 7-Days Ban"
+      - ""
+      - "§7If you receive any feedback"
+      - "§7From the above, follow carefully what"
+      - "§7the Staff wants to do for you"
+      - ""
+      - "§7Dont worry, all staffs are kind!"
+      - "§7Goodluck Chaser's!"
+      - "§7- Staff Team"
+  
+wiki:
+  about:
+    button: ["§0About Us\n§7Tap to see About PCP", 0, "textures/ui/recipe_book_icon"]
+    title: "§lAbout Us"
+    content:
+      - "§7About Us"
+      - ""
+      - " §fPocket§bPinas §7is a MCPE Server"
+      - " §7that focus on §fPhi§elip§bpin§ces"
+      - ""
+      - " §7Founded: §aMay 14, 2017"
+      - " §7Main Owner: §bHytlenz (Lentou)"
+      - ""
+      - "§7History"
+      - "§7Formerly PocketJeepney & PhilKraft"
+      - "§7- §eS1 §7: §bCh1 §7(§ePre Alpha: §fMay 2017§7)"
+      - "§7- §eS1 §7: §bCh2 §7(§eAlpha: §fJune > Dec 2017§7)"
+      - "§7- §fS2 §7: §9Ch1 §7(§aS1: §fJan > March 2018§7)"
+      - "§7- §fS2 §7: §9Ch2 §7(§aS2: §fOct 2018 > Feb 2019 & Oct > Nov 2019§7)"
+      - "§7- §aS3 §7: §6Ch1 §7(§aS3: §fDec 2019 > March 2020§7)"
+      - "§7- §aS3 §7: §6Ch2 §7(§aS4: §fApril 2020 > June 2020§7)"
+      - "§7- §aS3 §7: §6Ch3 §7(§aS5: §fJuly 2020 > Aug 2020§7)"
+      - "§7- §aS3 §7: §6Ch4 §7(§aS6: §fSept 2020 > Nov 2020§7)"
+      - "§7- §dS4 §7: §3Ch1 §7(§aS7: §fNov 2020 > Feb 2021§7)"
+      - "§7- §dS4 §7: §3Ch2 §7(§aS8: §fFeb 2021 > June 2021§7)"
+      - "§7- §dS4 §7: §3Ch3 §7(§aS9: §fJuly 2021 > Oct 2021§7)"
+  rules:
+    button: ["§0Golden Rules\n§7Tap to see Rules", 0, "textures/ui/icon_recipe_item"]
+    title: "§lGolden Rules"
+    content:
+      - "§7Golden House Rules [ Discord and Bedrock ]"
+      - ""
+      - "§7Game Related:"
+      - "§7- §fNo Protected Griefing"
+      - "§7- §fNo Building Explicit Content"
+      - "§7- §fNo Exploiting bugs"
+      - "§7- §fNo Cheating"
+      - "§7- §fNo Using Hack Clients"
+      - "§7- §fNo using Alt Accounts"
+      - "§7- §fNo Built-in texture packs like Night Vision"
+      - ""
+      - "§7Transaction Related:"
+      - "§7- §fNo In-Game Scamming"
+      - "§7- §fNo Real Life Scamming"
+      - "§7- §fNo Trading in between In Game Money / Items to Real Currency or Money"
+      - ""
+      - "§7Chat Related:"
+      - "§7- §fNo Profanity (Badwords)"
+      - "§7- §fNo Advertising Other Servers"
+      - "§7- §fNo Spamming"
+      - "§7- §fNo Emoji Spamming"
+      - "§7- §fNo Overusage of Emojis"
+      - "§7- §fNo Trashtalking"
+      - "§7- §fNo Chatting About Explicit Content"
+      - "§7- §fNo Mass Pinging"
+      - "§7- §fNo using @here or @everyone"
+      - ""
+      - "§7Social Related:"
+      - "§7- §fNo Cyberbullying"
+      - "§7- §fNo Threats"
+      - ""
+      - "§7Warns:"
+      - "§7- §a1st Offense: §f3 Days Temp Ban"
+      - "§7- §b2nd Offense: §fPermanent Ban until Reset"
+      - "§7- §c3rd Offense: §fIP Banned + IGN Ban / Discord Mute"
+      - "§7- §d4th Offense: §fDeviced Ban / Discord Ban"
+  terms:
+    button: ["§0Terms\n§7Tap to see Terms", 0, "textures/ui/icon_book_writable"]
+    title: "§lTerms"
+    content:
+      - "§7Terms and Conditions"
+      - ""
+      - "§7General:"
+      - "§7- §fIf you are 12yo below, make sure you have a permission to buy things"
+      - ""
+      - "§7Security:"
+      - "§7- §fYour account is your account. Don't share your account details."
+      - "§7- §fPlease open a ticket if you want to transfer your old ign to new ign"
+      - "§7- §fNew IGN can get data loss in our service"
+      - ""
+      - "§7Payment:"
+      - "§7- §fPremium Rank is non-refundable"
+      - "§7- §fAny Currency (Gem, Money) is non-refundable and non-withdrawable"
+      - "§7- §fPremium Ranks are Permanent as long as our Service is alive and kicking"
+      - "§7- §fAny outside transaction is not connected to our service"
+  faq:
+    button: ["§0FAQ\n§7Tap to See FAQ", 0, "textures/ui/icon_blackfriday"] 
+    title: "§lFAQ"
+    content:
+      - "§7Frequently Ask Questions"
+      - ""
+      - "§f- How to earn more money and exp?"
+      - "§a[By killing players, join a job, upgrade class, get a partner, join a faction, join organization, etc]"
+      - ""
+      - "§f- Is there a refund for premium ranks?"
+      - "§a[Nope, all ranks are not refundable]"
+      - ""
+      - "§f- How to get a gems?"
+      - "§a[Go to discord of pcp and create a ticket regarding on gems]"
+      - ""
+      - "§f- How to report bad stuffs?"
+      - "§a[Go to discord of pcp and create a ticket regarding on hackers etc.]"
+      - ""
+      - "§f- Are you hiring staffs?"
+      - "§a[We are not hiring anymore]"
+      - ""
+      - "§f- How to play?"
+      - "§a[You can choose district, this is more like a network but all in one server]"
+      - ""
+      - "§f- How to see all commands?"
+      - "§a[type /help and you can see all cmds]"
+      - ""
+      - "§f- Are you accepting badlion or astral client?"
+      - "§a[Yes, as long as that client is not for hacking/cheating]"
+...      

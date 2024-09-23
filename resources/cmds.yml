@@ -1,0 +1,700 @@
+---
+# COMMANDS FORM
+# Description Level: §c - Staff, §9 - Form or GUI or Sign, §b - Premium, §f - Free for All
+# tested
+utils:
+  text:
+    player: "{prefix} Player is not online or doesnt exists!"
+    perm: "{prefix} You dont have permission!"
+    survival: "{prefix} You need to become a survival!"
+    notallowed: "{prefix} This system is not allowed here."
+    disable: "{prefix} This system is currently disabled."
+    yourself: "{prefix} You cannot target to yourself."
+  buttons:
+    confirm: ["§0Confirm\n§7Tap to Confirm", 0, "textures/ui/confirm"]
+    cancel: ["§0Cancel\n§7Tap to Cancel", 0, "textures/ui/cancel"]
+    back: ["§0Back\n§7Tap to Back", 0, "textures/ui/import"]
+    lock: ["§0Locked\n§7Tap to View", 0, "textures/ui/lock"]
+
+# tested
+access:
+  prefix: " §l§8«§r§9Access§l§8»§r§7"
+  desc: "§cvanguard access command panel"
+  perm: "core.access"
+  title: "§lAccess"
+  content:
+    # Main Form
+    access:
+      - "§7Welcome §b{player}"
+      - ""
+      - "§7Access:"
+      - "§7- A Vanguard Special Panel"
+    # Input in Console Form
+    console:
+      - "§7Welcome §b{player}"
+      - ""
+      - "§7Console:"
+      - "§7- A In-Game Console Panel"
+      - ""
+      - "§7Type Your Commands Here"
+      - "§7Make Sure You Use it Properly"
+      - "§7Placeholder: §e@player §7- Player Name"
+    # Dropdown in Inventory See
+    invsee:
+      - "§7Welcome §b{player}"
+      - ""
+      - "§7Inventory See:"
+      - "§7- A Inventory Management Panel"
+      - ""
+      - "§7List of {invtype}:"
+  buttons:
+    # Main Form
+    # button: [string button, int type, string path]
+    console: ["§0Console\n§7Tap to Type Commands", 0, "textures/ui/book_edit_default"]
+    reload: ["§0Reload\n§7Tap to Reload Core", 0, "textures/ui/book_shiftright_default"]
+    invsee: ["§0Inventory See\n§7Tap to Observe Inventories", 0, "textures/ui/local_and_cloud_storage"]
+    vanish: ["§0Vanish\n§7Tap to Observe Players", 0, "textures/ui/invisibility_effect"]
+    # Inventory See Form
+  inv:
+    invchest: ["§0Inventory\n§7Tap to See Inventory", 0, "textures/blocks/chest_front"]
+    invechest: ["§0Ender Inventory\n§7Tap to See End Inventory", 0, "textures/blocks/ender_chest_front"]
+  text:
+    reload: "{prefix} The Core Configuration has been Reloaded."
+    console: "{prefix} [§f/{cmd}§7] Command has been executed."
+    vanish: "{prefix} You are now {status}."
+
+afk:
+  prefix: " §l§8«§r§9AFK§l§8»§r§7"
+  desc: "§faway from keyboard"
+  text:
+    set: "{prefix} You are {status} afk."
+    cast: "{prefix} §b{player} §7is {status} afk."
+# not tested
+bank:
+  prefix: " §l§8«§r§9Bank§l§8»§r§7"
+  desc: "§fbanko de oblong"
+  title: "§lBank"
+  limit: [100, 99999999]
+  input: ["§7How Much?", "§7Put Integer: 100 - 99,999,999"]
+  # Cost for Tickets
+  cost: 1
+  content:
+    - "§7Welcome to Banco de Oblong"
+    - ""
+    - "§7You can pay for your loved-ones"
+    - "§7or you can pay debt from others."
+    - ""
+    - "§7IGN: §b{player}"
+    - "§7My Balance: §f${balance}"
+    - "§7My Tickets: §b{tickets}T"
+  text:
+    notenough: "{prefix} You dont have enough §b{status}!"
+    notvalid: "{prefix} That amount is not valid!"
+    payself: "{prefix} You cannot pay yourself!"
+    format: "{prefix} You have paid §b{target} §7for §f${amount}"
+    limit: "{prefix} You are exceed from the limit."
+    accept: "{prefix} You received §f${amount} §7from §b{target}"
+
+# tested
+banner:
+  prefix: " §l§8«§r§9Banner§l§8»§r§7"
+  desc: "§fbanner form command"
+  title: "§lBanner Maker"
+  colors: ["§0Black", "§2Dark Green", "§3Dark Aqua", "§5Dark Purple", "§6Orange", "§7Gray", "§8Dark Gray", "§9Blue", "§aGreen", "§bAqua", "§cRed", "§dLight Purple", "§eYellow", "§fWhite"]
+  content:
+    main:
+      - "§7Welcome §b{player}"
+      - ""
+      - "§7Banner Maker:"
+      - "§7- A User-Friendly Banner Maker"
+    layer:
+      - "§7Welcome §b{player}"
+      - ""
+      - "§7Banner Layer:"
+      - "§7- A User-Friendly Banner Maker"
+      - ""
+      - "§7Creating a {colortag} {color} banner"
+    color:
+      - "§7Welcome §b{player}"
+      - ""
+      - "§7Banner Color:"
+      - "§7- A User-Friendly Banner Maker"
+      - ""
+      - "§7Creating a {colortag} {color} §7banner"
+      - "§7Choose a color for the pattern: {pattern}"
+  done: ["§0Done\n§7Tap to Done", 0, "textures/ui/hammer_l"]
+  text:
+    invalid: "{prefix} Invalid color type, do /banner for list of colors."
+    success: "{prefix} Succesfully made a §a{banner} §7banner with a cost of §f${cost}."
+    nomoney: "{prefix} You need §f${cost} §7to create a banner."
+  int:
+    count: 5
+    cost: 5000
+
+# tested
+bcast:
+  prefix: " §l§8«§r§fCast§l§8»§r§7"
+  desc: "§cbroadcast a message"
+  perm: "core.bcast"
+  text:
+    usage: "{prefix} Usage: /bcast <message>"
+    format: "{prefix} {message}"
+
+# tested
+call:
+  prefix: " §l§8«§r§9Call§l§8»§r§7"
+  desc: "§bthe panel for donators"
+  perm:
+    main: "core.call"
+    time: "core.time"
+    unli: "core.unli"
+  title: "§lCall"
+  buttons:
+    cure: ["§0Cure\n§7Tap to Heal/Feed", 0, "textures/ui/heart"]
+    cleanse: ["§0Cleanse\n§7Tap to Clear Effects", 0, "textures/ui/like_default"]
+    fly: ["§0Fly\n§7Tap to Toggle Flight Mode", 0, "textures/ui/slow_falling_effect"]
+    size: ["§0Size\n§7Tap to change Scale", 0, "textures/ui/speed_effect"]
+    tag: ["§0Tag\n§7Tap to change nickname", 0, "textures/ui/book_metatag_default"]
+    time: ["§0Time\n§7Tap to set time", 0, "textures/ui/timer"]
+    unli: ["§0Unli\n§7Tap to Toggle Unli Mode", 0, "textures/ui/mining_fatigue_effect"]
+  time:
+    0: ["§0Sunrise\n§7Tap to Set", 0, "textures/ui/time_1sunrise"]
+    1: ["§0Day\n§7Tap to Set", 0, "textures/ui/time_2day"]
+    2: ["§0Noon\n§7Tap to Set", 0, "textures/ui/time_3noon"]
+    3: ["§0Sunset\n§7Tap to Set", 0, "textures/ui/time_4sunset"]
+    4: ["§0Night\n§7Tap to Set", 0, "textures/ui/time_5night"]
+    5: ["§0Midnight\n§7Tap to Set", 0, "textures/ui/time_6midnight"]
+  content:
+    - " §7Greetings, §b{player}"
+    - ""
+    - " §7Welcome to System Call"
+    - ""
+    - " §7Only Premium Ranks can use"
+    - " §7these type of perks"
+  size: "§7Float of Size: (Default: §f1.0§7)"
+  # Tag
+  input: ["§7Input Here: (Limit: §f{limit}§7)", "§aInput Here : ..."]
+  toggle: "Reset Tag? :"
+  limit: 20
+  text:
+    cure: "{prefix} You have been cured (heal and feed)!"
+    cleanse: "{prefix} You have been cleanse (clear effect)!"
+    fly: "{prefix} Flight Mode {status}"
+    size: "{prefix} Your size is now {size}"
+    tag:
+      reset: "{prefix} You successfully reset your tag"
+      limit: "{prefix} The limit of text is §f{limit}"
+      success: "{prefix} You successfully set your tag to [§r{tag}]"
+    time: "{prefix} {player} time set to {status}"
+    unli: "{prefix} Unlimited Mode {status}"
+  # Blocks in Unli Mode who Banned
+  blocks: [14+0, 15+0, 16+0, 21+0, 56+0, 73+0, 129+0, 153+0, 173+0, 41+0, 42+0, 133+0, 57+0, 22+0, 152+0, 46+0, 54+0, 130+0, 116+0, 145+0, 379+0, 61+0, 58+0, 259+0, 361+0, 362+0, 458+0, 6+0, 6+1, 6+2, 6+3, 6+4, 6+5, 391+0, 392+0, 338+0, 241+0, 216+0, 170+0, 52+0, 1+0, 26+0, 355+0, 372+0, 46+0, 214+0, 216+0]
+
+# tested
+hub:
+  desc: "§fa teleportation to main world"
+  format: ["§bHub", "§fTeleport"]
+
+flag:
+  desc: "§cthe event flag management"
+  text:
+    noprotect: "{prefix} §b{world} §7has no protection, do §b/flag add {world}"
+    notexists: "{prefix} §b{world} §7does not exists."
+    exists: "{prefix} §b{world} §7has a protection, do §b/flag"
+    register: "{prefix} §b{world} §7has been registered"
+    save: "{prefix} All configurations were saved for §b{world}"
+# tested
+int:
+  prefix: " §l§8«§r§aInt§l§8»§r§7"
+  desc: "§cinteger points for players"
+  text:
+    usage: "{prefix} Usage: §b/int <player> <type> <amount>"
+    exist: "{prefix} System data doesnt exists"
+    grant: "{prefix} Grant {player} => {amount} | {type}"
+    num: "{prefix} Amount must be numeric"
+    gift: "{prefix} You have {type} a {mode} worth {amount}"
+
+# tested
+love:
+  enable: true
+  prefix: " §l§8«§r§dLove§l§8»§r§7"
+  desc: "§flove is inherently free. It cannot be bought, sold, or traded."
+  boost:
+    exp: [10, 1000]
+    bal: [10, 1000]
+    str: [10, 100]
+  text:
+    cantconfess: "{prefix} You cant confess to anyone because you`re already in relationship! §f#BeLoyal"
+    change: "{prefix} You cant confess to anyone because your status is on §a{status} §f#GoWithFlow"
+    cantbreakup: "{prefix} You cant breakup because you dont have any Spouse. §f#StaySingle"
+    status: "{prefix} Your status is now §a{status} §f#Switch"
+    cantswitch: "{prefix} You cant switch status because you`re §a{status}. §f#Nani?"
+    chosen: "{prefix} Your chosen partner is now on relationship. §f#AwtsPainPighati"
+    notinterested: "{prefix} Your chosen partner is not interested in any relationship. §f#OkayLangYan"
+    broken: "{prefix} Your chosen partner is on Broken State. §f#MoveOn"
+    self: "{prefix} You cannot confess to yourself! §f#NoSelfLove"
+    confess: "{prefix} You confess to §d{target}. §f#NowsYourChance"
+    reject: "{prefix} You have been rejected for your feelings. Better Luck Next Time §f#Friendzone"
+    keep: "{prefix} You keep your relationship! §f#StayStrong"
+  cast:
+    confess: "{prefix} §b{sender} §7has confess their feelings to §b{target}! §f#HeartString"
+    accept: "{prefix} §b{sender} §7and §b{target} §7are now Spouse! §f#LoveIsInTheAir"
+    reject: "{prefix} §b{target} §7rejected their confess to §b{sender} §f#OksLangAko"
+    breakup: "{prefix} §b{sender} §7and §b{target} §7are no longer a Spouse. §f#HeartbreakAnniversary"
+  form:
+    title: "§lLove"
+    button:
+       confess: ["§0Confess to Someone\n§7Tap to Select Partner", 0, ""]
+       breakup: ["§0Breaking Up\n§7Tap to Breaking Up", 0, ""]
+       status: ["§0Switch Status\n§7Tap to Switch", 0, ""]
+    label:
+      main:
+        - "§7Welcome to Love System"
+        - ""
+        - "§7Loving someone in the server"
+        - "§7Can earn you another boost to all"
+        - "§7Points and other Stats"
+        - ""
+        - "§7Select your Option:"
+      select:
+        - "§7Select your Partner`s in Crime"
+        - ""
+        - "§7Love is in the air."
+        - "§7Love can wait & Loving can hurt"
+      dropdown: "§7Player`s List"
+      confess:
+        - "§b{sender} §7has been confess their feelings for you!"
+        - "§7would you like to accept or reject?"
+      breakup:
+        - "§7Are you sure you want to"
+        - "§7breaking up with §b{spouse} ?"
+
+path:
+  prefix: " §l§8«§r§9Path§l§8»§r§7"
+  desc: "§fa course of action or conduct"
+  required:
+    base:
+      str: 1500
+      bal: 500000
+    evolve:
+      str: 5000
+      bal: 1500000
+  level:
+    #profession: 15
+    class:
+      base: 30
+      evolve: 60
+    rank: 5
+  cost:
+    jobchange: 500000
+  form:
+    title: "§lPath"
+    content:
+      main:
+        - "§l§fPath§r"
+        - "§7Select your Path or Buttons"
+        - "§7to see Information"
+      class:
+        - "§l§fChaser`s Class§r"
+        - "§7Class is a Character Statistics that proves"
+        - "§7any abilities in each Players"
+        - ""
+        - "§fTypes of Class"
+        - "§fBase: §7[Lvl: 30] First type of Chaser`s Class with"
+        - "§7improvements based on Professions."
+        - ""
+        - "§bEvolve: §7[Lvl: 60] Second type and Last Type of Chaser`s"
+        - "§7Class with advanced knowledge and higher chances"
+        - "§7of earnings."
+        - ""
+        - "§7This selection of Class is not CHANGEABLE."
+        - "§7Better to Choose wisely depends on your Profession type!"
+        - ""
+        - "§fChaser`s Base Class with Best For!"
+        - "§eGuardian §7-> §6Centurion §7[§cPhysical§7]"
+        - "§bPaladin §7-> §9Crusader §7[§9Magical§7]"
+        - "§5Magician §7-> §dWarlock §7[§9Magical§7]"
+        - "§3Gunslinger §7-> §cExecutioner §7[§cPhysical§7]"
+        - "§bTracer §7-> §3Dominator §7[§cPhysical§7]"
+        - "§7Arbiter §7-> §9Liberator §7[§9Magical§7]"
+        - "§2Wanderer §7-> §aHerrscher §7[§9Magical§7]"
+        - "§1Soldier §7-> §9Commander §7[§cPhysical§7]"
+        - "§7Assasin §7-> §fPunisher §7[§cPhysical§7]"
+        - "§9Chiliarch §7-> §bDreadlord §7[§9Magical§7]"
+        - ""
+        - "§fProfessions"
+        - "§7Are passive in Chaser`s Class that"
+        - "§7adepts your abilities."
+        - ""
+        - "§fTypes of Professions"
+        - "§cPhysical: §7More on Strength and Defense"
+        - "§9Magical: §7More on Magics and Range"
+        - ""
+        - "§7After you choose the Class, You cant change it anymore"
+        - "§7unless you buy Chaser Ticket."
+      evolve:
+        - "§l§fChaser`s Class§r"
+        - "§7Are you sure you want to Upgrade into"
+        - "§fBase: {currentjob} §7-> §bEvolve: {newjob}"
+        - ""
+        - "§7Requirements:"
+        - "§7- §c{str} str"
+        - "§7- §f${bal}"
+        - ""
+        - "§7This Evolution will enhance your"
+        - "§7abilities and other skills."
+      job:
+        - "§l§fJOBS§r"
+        - "§7Jobs is a type of extra part time"
+        - "§7for Players who wants to earn more"
+        - "§7points or currencies."
+        - ""
+        - "§fTypes of Jobs"
+        - "§eMiner: §7Expert at Mining Ores and Rocks"
+        - "§7- Can earn up to 10 percent depends on Ores/Rocks"
+        - "§eWoodcutter: §7Expert at Logs"
+        - "§7- Can earn up to 10 percent depends on Logs"
+        - "§eFarmer: §7Expert at Farming"
+        - "§7- Can earn up to 10 percent depends on Farming"
+        - "§eGardener: §7Expert at Gardening"
+        - "§7- Can earn up to 10 percent depends on Gardening"
+        - "§eSlayer: §7Expert at Killing"
+        - "§7- Can earn up to 10 Percent depends on Progress"
+        - ""
+        - "§7You can choose anytime of Jobs and change"
+        - "§7There`s no limit for earning some points!"
+      changejob:
+        - "§7Are you sure you want to change your job to §e{job}?"
+        - "§7It cost: §f${cost}"
+    dropdown:
+      class: "§7Select your Chaser`s Class:"
+      job: "§7Select your Job:"
+    buttons:
+      class: ["§0Chaser`s Class\n§7Tap to View", 0, "textures/ui/blindness_effect"]
+      rank: ["§0Ascendant Rank\n§7Tap to Rankup", 0, "textures/ui/strength_effect"]
+      job: ["§0Jobs\n§7Tap to Select Jobs", 0, "textures/ui/slow_falling_effect"]
+  text:
+    job: "{prefix} You successfully apply to §e{job} §7Job"
+    class: "{prefix} Your Chaser`s {type} §7Class is now {class}"
+    level: "{prefix} You cannot select {option} because you didnt meet the requirements. Lvl: {lvlneed} Need!"
+    alreadyclass: "{prefix} You already have a Chaser`s Class!"
+    rankup: "{prefix} You dont have enough strength to rankup [Next Rank: {next}, Need Str: ${str}]"
+    ascent: "{prefix} §b{player} §7ascent to §a{rank}. §7Congratulations!"
+    lastrank: "{prefix} You`re on the last rank of Ascendant!"
+    perm: "easykits.kit.{rank}"
+    jobchange: "{prefix} You dont have enough balance to change a job!"
+    cantchange: "{prefix} You are already a §b{job}!"
+    required: "{prefix} You didnt meet the requirements for Chaser`s {type} §7Class! Need: §c{str} str §7and §f${bal}"
+  roles:
+    class: # Base -> Evolve
+      - "Guardian"
+      - "Paladin"
+      - "Magician"
+      - "Gunslinger"
+      - "Tracer"
+      - "Arbiter"
+      - "Wanderer"
+      - "Soldier"
+      - "Assasin"
+      - "Chiliarch"
+    profession:
+      physical:
+        - "Guardian"
+        - "Gunslinger"
+        - "Tracer"
+        - "Soldier"
+        - "Assasin"
+      magical:
+        - "Paladin"
+        - "Magician"
+        - "Arbiter"
+        - "Wanderer"
+        - "Chiliarch"
+    job:
+      - "Worker"
+      - "Hunter"
+    rank: #str
+      Novice: 0
+      Apprentice: 20
+      Member: 26
+      Truce: 30
+      Adept: 36
+      Expert: 46
+      Master: 60
+      Glorious: 72
+      Veteran: 82
+      Genesis: 95
+      Prominence: 105
+      Exousia: 210
+
+port:
+  prefix: " §l§8«§r§bTell§l§8»§r§7"
+  desc: "§bpremium access for portable device"
+  perm: "core.port"
+  title: "§lPortable Device"
+  content:
+    - "§7Welcome §b{player}"
+    - ""
+    - "§7Portable Forms:"
+    - "§7- A User-Friendly Device"
+  craft: ["§0Crafting Table\n§7Tap to Craft", 0, "textures/blocks/crafting_table_top"]
+  echest: ["§0Ender Chest\n§7Tap to See", 0, "textures/blocks/ender_chest_front"]
+
+# tested
+quest:
+  enable: true
+  prefix: " §l§8«§r§9Quest§l§8»§r§7"
+  desc: "§fa extra mission/task for adventurers"
+  worlds: ["pcpfacs4"]
+  content:
+    - "§fTitle: §a{quest}"
+    - "§fReq. Level: §b{level}"
+    - "§f- §e{info}"
+  title: "§lQuest"
+  complete: ["§aComplete", "§7{quest}"]
+  buttons:
+    list: ["§0List of Quest\n§7Tap to See Quest", 0, ""]
+    comp: ["§0Complete Quest\n§7Tap to Complete Quest", 0, ""]
+  text:
+    added: "{prefix} A new quest has been added: §r{quest}"
+    failed: "{prefix} Failed to insert Quest Book. Make sure you have empty space."
+    level: "{prefix} You haven't met the level requirement."
+    error: "{prefix} An error has occured, the quest may have been deleted on the process."
+    already: "{prefix} You are already in a quest."
+    insufficient: "{prefix} Insufficient amount of the item."
+    item: "{prefix} You are not holding the required item(s)."
+    notquest: "{prefix} You are not on a Quest."
+  book:
+    title: "§r§7Quest: §r{quest}"
+    page1:
+      - "§0 < Title >"
+      - "§01. §6{quest}"
+      - ""
+      - "§0 < Level >"
+      - "§02. §fLvl.§3{level}"
+    page2:
+      - "§0< Info >"
+      - "§03. §2{info}"
+      - ""
+      - "§0< Player >"
+      - "§04. {player}"
+    author: "§fPocket§bPinas"
+
+# tested
+spawn:
+  desc: "§fa teleportation to world spawn"
+  format: ["§aSpawn", "§fTeleported"]
+
+# tested
+stats:
+  prefix: " §l§8«§r§9Stats§l§8»§r§7"
+  desc: "§fa statistics panel for players"
+  title: "§0{player}'s §lStats"
+  edittitle: "§lEdit Stats"
+  playericon: ["§0{player}\n§7Tap to Close", 0, "{icon}"]
+  format:
+    - "§l§fPERSONAL§r"
+    - "  §7Name: §b{player}"
+    - "  §7Tag: §r{display_name}"
+    - "  §7Level: §b{lvl} §8(§f{exp}§8/§7{texp}§8)"
+    - "  §7Bio: §r{bio}"
+    - ""
+    - "§l§fRELATIONSHIP§r"
+    - "  §7Spouse: §d{spouse}"
+    - "  §7Status: §e{status}"
+    - "  §7Charms: §f{charm}C"
+    - ""
+    - "§l§fATTRIBUTES§r"
+    - "§7- §7Rating: §e{rating} RT"
+    - "§7- §cCombat Power: (CP)"
+    - "  §7Physical Attack: §c{physical.damage}"
+    - "  §7Critical Damage: §c{critical.damage}"
+    - "  §7Critical Chance: §c{critical.chance}%"
+    - "  §7True Damage: §c{true.damage}"
+    - "§7- §bDefensive Power: (DP)"
+    - "  §7Physical Defence: §b{physical.defence}"
+    - "  §7Magic Defence: §b{magic.defence}"
+    - "  §7Fire Defence: §b{fire.defence}"
+    - "  §7Fall Defence: §b{fall.defence}"
+    - "§7- §aAction Power: (AP)"
+    - "  §7Current HP: §a{current.hp}"
+    - "  §7Maximum HP: §a{max.hp}"
+    - "  §7Saturation: §a{saturation}"
+    - "  §7Regeneration: §a{regen}"
+    - "  §7Passive: §a{passive}"
+    - "  §7Available Pts: §a{avail.pts}"
+    - ""
+    - "§l§fRANK§r"
+    - "  §7Group: §r{group}"
+    - "  §7Elo: §r§a{elorank}.{div}"
+    - "  §7Profession Job: §r§f{profession}"
+    - "  §7Chaser`s Class: §r§e{class}"
+    - "  §7Role: §r{role}"
+    - "  §7Rank: §b{rank}"
+    - ""
+    - "§l§fFACTION§r"
+    - "  §7Name: §a{fname}"
+    - "  §7Role: §e{frole}"
+    - "  §7Power: §b{fpower}PWR"
+    - "  §7Money: §f${fmoney}"
+    - ""
+    - "§l§fSTATS§r"
+    - "  §7Streaks: §f{streaks}"
+    - "  §7Bounty: §f${bounty}"
+    - "  §7Kills: §f{kills}"
+    - "  §7Deaths: §f{deads}"
+    - "  §7Mob Kills: §f{mkills}"
+    - "  §7Quest Taken: §f{tquest}"
+    - "  §7Votes: §f{votes}"
+    - ""
+    - "§l§fPOINTS§r"
+    - "  §7Balance: §f${money}"
+    - "  §7Str: §c{str}s"
+    - "  §7Gems: §d{gems}G"
+    - "  §7Tickets: §b{tickets}T"
+  menu:
+    buttons:
+      bio: ["§0Bio\n§7Tap to Edit Bio", 0, ""]
+      role: ["§0Roles\n§7Tap to Edit Role", 0, ""]
+      sb: ["§0Scoreboard\n§7Tap to Switch", 0, ""]
+      icon: ["§0Profile Icon\n§7Tap to Set Icons", 0, ""]
+    bio:
+      limit: 120
+      input: "§7Add your Bio: {limit} Limit"
+      place: "§7Type your desired bio"
+    roles:
+      dropdown: "§7Pick your Role:"
+      slider: "§7Select Color"
+      label: "§7Color palette: §00 §11 §22 §33 §44 §55 §66 §77 §88 §99 §a10 §b11 §c12 §d13 §e14 §f15§r \n\n\n"
+    icon:
+      dropdown: "§7Pick your Icon:"
+      label: "§l§fPROFILE ICONS§r\n§7a Type of Design in PocketPinas\n§7Icons will be display in TPA`s, Stats, Etc."
+  text:
+    limit: "{prefix} The max limit in bio is {limit}"
+    letter: "{prefix} Only letters and numbers are accepted in bio"
+    bio: "{prefix} Succesfully updated your Bio to {bio}"
+    role: "{prefix} Successfully updated your Role to {role}"
+    view: "{prefix} §b{player} §7is viewing your statistics."
+    cantsee: "{prefix} You cannot see §b{player}`s §7stats for now!"
+    trytosee: "{prefix} §b{sender} §7is trying to see your stats but they failed!"
+    stats: "{prefix} Your stats is now {status} §7(§f{reason}§7)"
+    type: "{prefix} Only accepts characters not symbols!"
+    icon: "{prefix} Successfully set your icon to {icon}"
+    sb: "{prefix} Scoreboard {status}"
+  icons:
+    - "absorption_effect"
+    - "anvil_icon"
+    - "armor_full"
+    - "deop"
+    - "flame_full_image"
+    - "gift_square"
+    - "haste_effect"
+    - "heart"
+    - "hunger_effect"
+    - "icon_armor"
+    - "icon_crafting"
+    - "icon_recipe_construction"
+    - "icon_recipe_item"
+    - "icon_recipe_nature"
+    - "inventory_icon"
+    - "invisibility_effect"
+    - "jump_boost_effect"
+    - "levitation_effect"
+    - "nausea_effect"
+    - "night_vision_effect"
+    - "MCoin"
+    - "op"
+    - "poison_effect"
+    - "recipe_book_icon"
+    - "resistance_effect"
+    - "slow_falling_effect"
+    - "slowness_effect"
+    - "speed_effect"
+    - "strength_effect"
+    - "sword"
+    - "timer"
+    - "trash"
+    - "trophy"
+    - "water_breathing_effect"
+    - "weakness_effect"
+    - "wither_effect"
+    - "xbox4"
+  roles:
+    - "Assassin"
+    - "Ai"
+    - "Alien"
+    - "Beautiful"
+    - "Butler"
+    - "Baby"
+    - "Broken"
+    - "Cute"
+    - "Chick"
+    - "Cop"
+    - "Cook"
+    - "Cancer"
+    - "Demon"
+    - "Derp"
+    - "Debonaire"
+    - "Emo"
+    - "Gangsta"
+    - "Ghoul"
+    - "God"
+    - "Genius"
+    - "Hater"
+    - "Hacker"
+    - "Hero"
+    - "High"
+    - "Hitman"
+    - "Hot"
+    - "Immortal"
+    - "Jackas$"
+    - "KPOP"
+    - "LGBT"
+    - "Loner"
+    - "Mafia"
+    - "Muse"
+    - "Musician"
+    - "Magician"
+    - "Mime"
+    - "Nurse"
+    - "Ninja"
+    - "Navy"
+    - "Noble"
+    - "Neko"
+    - "Nerd"
+    - "Pet"
+    - "Pirate"
+    - "Principal"
+    - "Prince"
+    - "Princess"
+    - "Saiyan"
+    - "Sailor"
+    - "Student"
+    - "Scientist"
+    - "Sexy"
+    - "Satan"
+    - "Single"
+    - "Senpai"
+    - "Soldier"
+    - "Teacher"
+    - "Troll"
+    - "Taken"
+    - "Villain"
+    - "Warrior"
+    - "Wolf"
+    - "Zombie"
+
+# Tell
+# tested
+tell:
+  prefix: " §l§8«§r§cTell§l§8»§r§7"
+  desc: "§fsend a private message to player"
+  text:
+    usage: "{prefix} Usage: §b/tell <player> <message..>"
+    format: "{prefix} §b{sender} §7-> §e{recipient} §l§8» §r§f{message}"
+    urself: "{prefix} You are telling to yourself."
+
+warp:
+  prefix: " §l§8«§r§bWarp§l§8»§r§7"
+  desc: ""
+...

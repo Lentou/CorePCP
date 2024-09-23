@@ -1,0 +1,77 @@
+title: "§r§l§dDiwata's Charm"
+rate: 20
+level_requirement: 60
+loots:
+  Diwatas Kit I:
+    type: 'item'
+    items:
+      helmet:
+        name: "§r§l§8>> §r§eCrown of Goddess Tala §l§8<<§r"
+        id: 314
+        meta: 0
+        amount: 1
+        enchantments:
+          protection: 6
+          fire_protection: 2
+      chestplate:
+        name: "§r§l§8>> §r§fAring Sinukuan's Armor §l§8<<§r"
+        id: 307
+        meta: 0
+        amount: 1
+        enchantments:
+          protection: 6
+          fire_protection: 2
+  Diwatas Kit II:
+    type: 'item'
+    items:
+      leggings:
+        name: "§r§l§8>> §r§bApolaki's Leggings §l§8<<§r"
+        id: 312
+        meta: 0
+        amount: 1
+        enchantments:
+          protection: 6
+          fire_protection: 2
+      boots:
+        name: "§r§l§8>> §r§fSitan's Boots §l§8<<§r"
+        id: 309
+        meta: 0
+        amount: 1
+        enchantments:
+          protection: 6
+          fire_protection: 2
+  Diwatas Grant:
+    type: 'cmd'
+    commands:
+      - 'grant %player% exp 10340'
+      - 'int %player% +bal 200000 400000'
+  Grand Sword and Axe:
+    type: 'item'
+    items:
+      axe:
+        name: "§r§l§8>> §r§fDumakulem's Axe §l§8<<§r"
+        id: 258
+        meta: 0
+        amount: 1
+        enchantments:
+          sharpness: 3
+          unbreaking: 7
+      sword:
+        name: "§r§l§8>> §r§fLibulan's Moonblade §l§8<<§r"
+        id: 267
+        meta: 0
+        amount: 1
+        enchantments:
+          sharpness: 4
+          unbreaking: 7
+  Diwatas Saber:
+     type: 'item'
+     items:
+       saber:
+         name: "§r§l§8>> §r§eBathala's Golden Saber §l§8<<§r"
+         id: 283
+         meta: 0
+         amount: 1
+         enchantments:
+           sharpness: 5
+           unbreaking: 7

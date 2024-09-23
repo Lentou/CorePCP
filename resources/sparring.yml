@@ -1,0 +1,139 @@
+---
+# CorePCP Sparring Configuration
+
+enable: true
+
+text:
+  prefix: " §l§8«§r§9Sparring§l§8»§r§7"
+  desc: "§fthe practice arena of pocketpinas"
+  worlds: ["pcp-town", "default"]
+  text:
+    cantuse: "{prefix} You cannot use this command here except /hub."
+    notexists: "{prefix} World doesnt exists"
+    title: ["§eWelcome to", "§f- {arena} §f-"]
+    close: "{prefix} {type} Currently Closed!"
+    level: "{prefix} Your level doesnt meet the requirements!"
+    os: "{prefix} Only §8(§e{needos}§8) §7can join in this arena, Your OS is §b{os}"
+    exit: "{prefix} Successfully exit on Sparring"
+
+int:
+  elo: [1, 10]
+  
+form:
+  title: "§lSparring"
+
+kits:
+  normal:
+    arenas: ["rizalpark", "kitchen"]
+    kits:
+      armour:
+        helmet:
+          id: 310
+          meta: 0
+          name: "§r§l§8>> §r§7Sparring §fHelm §l§8<<§r"
+          lore:
+            - ""
+            - "§r§7Sparring §fHelm"
+            - "§r§7- you will protected"
+            - "§r§7- and guided by unknown god"
+            - ""
+        chestplate:
+          id: 311
+          meta: 0
+          name: "§r§l§8>> §r§7Sparring §fTop §l§8<<§r"
+          lore:
+            - ""
+            - "§r§7Sparring §fTop"
+            - "§r§7- you will protected"
+            - "§r§7- and guided by unknown god"
+            - ""
+        leggings:
+          id: 312
+          meta: 0
+          name: "§r§l§8>> §r§7Sparring §fBottom §l§8<<§r"
+          lore:
+            - ""
+            - "§r§7Sparring §fBottom"
+            - "§r§7- you will protected"
+            - "§r§7- and guided by unknown god"
+            - ""
+        boots:
+          id: 313
+          meta: 0
+          name: "§r§l§8>> §r§7Sparring §fBoots §l§8<<§r"
+          lore:
+            - ""
+            - "§r§7Sparring §fBoots"
+            - "§r§7- you will protected"
+            - "§r§7- and guided by unknown god"
+            - ""
+      items:
+      - id: 267
+        meta: 0
+        count: 1
+        name: "§r§l§8>> §r§7Sparring §fSword §l§8<<§r"
+        lore:
+         - ""
+         - "§r§7Sparring §fSword"
+         - "§r§7- you will granted strength"
+         - "§r§7- and guided by unknown god"
+         - ""
+      - id: 322
+        meta: 0
+        count: 16
+        name: "§r§l§8>> §r§bAngel Fruit §l§8<<§r"
+
+list:
+  normal:
+    title: "§lNormal Sparring"
+    name: "§2Normal Mode"
+    button: "§2{name}\n§7Tap to Proceed"
+    enable: true
+    sparring:
+      kitchen:
+        os: ["Win10"]
+        name: "§2Kitchen"
+        world: ["pcpsoup", true, 0, 0, 0]
+        enable: true
+        level: 1
+        button: "{name}\n§7Tap to Proceed"
+        label:
+          - ""
+          - "§7Welcome §b{player}!"
+          - ""
+          - "{name}"
+          - "§7- Kitchen, a world of Giants"
+          - "§7- cooking in this room."
+          - ""
+          - "§7- §fLevel Requirements: §b{level}"
+          - "§7- §fOpen: {bool}"
+          - "§7- §fNeed OS: §8[§b{needos}§8]"
+          - ""
+          - "§7- This arena is pvp enabled, Get ready Chaser!"
+          - ""
+      rizalpark:
+        os: ["PE", "iOS"]
+        name: "§2Rizal Park"
+        world: ["default", true, 0, 0, 0]
+        enable: true
+        level: 1
+        button: "{name}\n§7Tap to Proceed"
+        label:
+          - ""
+          - "§7Welcome §b{player}!"
+          - ""
+          - "{name}"
+          - "§7- Rizal Park, also known as Luneta Park"
+          - "§7- or simply Luneta,"
+          - "§7- is a historic urban park"
+          - "§7- located in Ermita, Manila, Philippines."
+          - ""
+          - "§7- §fLevel Requirements: §b{level}"
+          - "§7- §fOpen: {bool}"
+          - "§7- §fNeed OS: §8[§b{needos}§8]"
+          - ""
+          - "§7- This arena is pvp enabled, Get ready Chaser!"
+          - ""
+  #raid:
+  #event:
+...

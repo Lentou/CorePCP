@@ -1,0 +1,595 @@
+---
+# Events and Tasks Configuration
+
+# A
+afk:
+  text:
+    join: "{prefix} You have been removed from AFK!"
+    event: "{prefix} You cant §e{status}! §7do /afk to unset"
+    kill: "{prefix} You cant kill {player}, they AFK #NoAfkKilling!"
+
+# B
+# Border: Event with Limitation of Builds/Place
+border:
+  enable: true
+  prefix: " §l§8«§r§9Limit§l§8»§r§7"
+  # type: "center"|"sphere" "grid"|"cube"
+  type: "grid"
+  # value: the value or the size of border
+  value: 20000
+  # the world where the border is enable
+  worlds: ["pcpfacs4"]
+  text:
+    edit: "{prefix} The world limit is §b{limit} §7and you {status} on §eX: {x} §7& §eZ: {z}"
+    dist: "{prefix} The world limit is §b{limit} §7and your distance is §e{dist}"
+    tip: "{prefix} You went over the limit!"
+
+# C
+# Cast: Task with Command and Message
+cast: # todo title broadcast and tip broadcast
+  enable: 
+    message: true
+    command: false
+  int: 
+    message: 400
+    command: 300
+  broadcast:
+    - "{prefix} Join to our server Facebook Group to stay updated! §bFacebook: §eweb.pocketpinas.cf"
+    - "{prefix} Vote for our server to get awesome rewards! when you done, type §b/vote §7Vote at: §eweb.pocketpinas.cf"
+    - "{prefix} You are playing on §fPocket§bPinas §7With §b{online}§7/§b{max_players}"
+    - "{prefix} Subscribe §bLentou §7on §cYou§rTube§7!"
+    - "{prefix} Please invite your friends to play on our server! §bpocketpinas.cf:8490"
+    - "{prefix} Join our Discord server! §dDiscord: §eweb.pocketpinas.cf"
+    - "{prefix} Make sure you eat your food  before you play!"
+    - "{prefix} Make sure you wash your hands  to prevent the virus!"
+    - "{prefix} Need Help? type §b/board §7for rules & infos about this server!"
+    - "{prefix} Top-up @ §eweb.pocketpinas.cf §7for gems. §7Top-up/donation can help server be alive and always updated!"
+    - "{prefix} If you caught hacker or cheater, kindly §freport §7it to §f/report!"
+  commandcast:
+    - "{prefix} All players will receive §f150 Exp:grant {player} exp 150"
+    - "{prefix} All players will receive §f150 Exp:grant {player} exp 150"
+
+# Chat: Event with Special Message
+chat:
+  prefix: " §l§8«§r§fChat§l§8»§r§7"
+  slow:
+    enable: true
+    sec: 5
+    notice: "{prefix} Dont chat too fast."
+  tag:
+    score: 
+      enable: true
+      tag: "§e{os} §8| §f{hp}%§c♥ §8| §a{ping}ms §8| §b{cps}cps"
+    op:
+      enable: true
+      tag: "§c+"
+    hide:
+      enable: false
+      worlds: ["placeholder"]
+  words:
+    capital: false
+    mosaic: "*"
+    messages: [".leet.cc", ".cf", ".tk", ".ml", ".cc", ".net", ".co", ".co.uk", ".ddns", ".ddns.net", ".pocket.pe", ".pe", ".no-ip", ".live", ".gov", ".xyz", "http://", "https://", ".mcpe.dev", ".dev", ".com", ".us.to", ".nbb.one", ".aternos.me", ".me", ".eu", ".mcbe", "bobo", "tanga", "tangina", "gago", "putangina", "vuvu", "tang", "bubu", "tite", "kike", "burat", "puki", "bilat", "kepyas", "kipyas", "gagu", "titi", "kiki", "borat", "gagu"]
+
+# Cleaner: Task with Entity Clearer
+cleaner:
+  enable: true
+  prefix: " §l§8«§r§fCleaner§l§8»§r§7"
+  seconds: 300
+  times: [60, 30, 15, 10, 5, 4, 3, 2, 1]
+  text:
+    time: "{prefix} Entities will clear in §f{seconds}s"
+    clear: "{prefix} Cleared a total of §f{count} §7entities"
+  clear:
+    items: true
+    mobs: true
+    xp-orbs: true
+    # list of exemption clear
+    exempt:
+      - Zombie
+      - Pig
+
+# Combat: Event & Task with Logging in Combat 
+combat:
+  enable: true
+  prefix: " §l§8«§r§cCombat§l§8»§r§7"
+  interval: 10
+  text:
+    fly: "{prefix} Your flight will be disabled due to combat."
+    tag: "{prefix} You're in combat, If you quit you will be killed, Please wait §f{time}s §7to leave."
+    end: "{prefix} You can now log-out."
+    cmd: "{prefix} You can't use this command while in combat!"
+    kill: "{prefix} Your enemy is §c{enemy}§7, not §b{player}"
+  cmds: [/spawn, /hub, /tpa, /warp, /home, /tp, /town, /p, /call, /port]
+
+# D
+# Death: Event with Special Message and Rewards
+death:
+  prefix: 
+    death: " §l§8«§r§cDeath§l§8»§r§7"
+    streak: " §l§8«§r§cStreak§l§8»§r§7"
+  rewards:
+    money:
+      killer: [10, 1000]
+      victim: [10, 500]
+    exp: [20, 1000]
+    elo: [10, 100]
+    str: [1, 3]
+    bounty: [10, 10000]
+  format:
+    slained: "{prefix} §r§b{victim} §7{randmsg} §e{killer} §8[{item}§r§8]"
+    killed: "{prefix} §r§b{victim} §7{randmsg} §c{mob}"
+    suicide: "{prefix} §r§b{victim} §7{randmsg}"
+    # Streak
+    streak: "{prefix} §r§e{player} §7has a §f{streak} §7kill streak §f[${bounty}], {randmsg}"
+    ended: "{prefix} §r§b{player} §7has ended §e{victim}'s §7kill streak §f[${bounty}], {randmsg}"
+  respawn:
+    title: ["§aRespawn", "§fYou Died!"]
+    worlds: ["pcpfacs4"]
+  rand:
+    generic:
+      - "perished"
+      - "vanished"
+      - "died nothing"
+    player:
+      - "has been slain by"
+      - "has been slapped by"
+      - "has been killed by"
+      - "taken an L by"
+      - "filled with love by"
+      - "has been taken down by"
+      - "kisses"
+      - "is pregnant with"
+    mob:
+      - "has been killed by"
+      - "has been slained by"
+      - "has been slapped by"
+    outOfWorld:
+      - "fell out the world"
+      - "vanished in this world"
+      - "fell like a legend"
+    inWall:
+      - "suffocated in death"
+      - "was rubbed against the wall"
+      - "kissed the wall"
+    flame:
+      - "is cooked"
+      - "is burned"
+      - "became fried chicken"
+    drown:
+      - "drowned in love"
+      - "became a fish"
+      - "swam but did not get up"
+    magic:
+      - "died in magic"
+      - "is hungry for magic"
+      - "was slapped with magic"
+    cactus:
+      - "was bitten by a cactus"
+      - "stayed with the cactus"
+      - "stupidly landed on the cactus"
+    highplace:
+      - "fell into the sewer"
+      - "fell unscathed"
+      - "tried to fly like an eagle"
+    shot:
+      - "was shot with love by"
+      - "was shot unconscious by"
+      - "was shot for stupidity by"
+    lava:
+      - "drowned in the lava"
+      - "tried to swim in lava"
+      - "hotspring on lava"
+    explosion:
+      - "suddenly exploded"
+      - "blasted on love"
+      - "explode nothing"
+    # Streak
+    opening:
+      - "§cGodlike!"
+      - "§aSomeone Stop this Player!"
+      - "§6Holy Sht!"
+      - "§3OMG!"
+      - "§dPlease Beat this Player"
+      - "§eNANIKURE!"
+      - "§4OP!"
+      - "§9Clean Cut!"
+      - "§bBoom!"
+    ending:
+      - "§cLoser!"
+      - "§6Epic Fail!"
+      - "§aWhat a Noob!"
+      - "§9That Suckss!"
+
+# E
+
+# F
+flag:
+  prefix: " §l§8«§r§9Flag§l§8»§r§7 "
+  title: ["{prefix} §e{type}", "§7is banned here"]
+  antivoid: true
+  perm: "core.permit"
+  change: "{prefix} Your gamemode has changed."
+  cmds:
+    world: ["/cobblestone", "/tnt"]
+    pcpplots: ["/town", "/port", "/playervaults", "/pv", "/playervault", "/call"]
+    pcpwars8: ["/town", "/playervaults", "/pv", "/playervault", "/port"]
+  item:
+    world: ["cobblestone", "tnt"]
+    pcpplots: ["tnt", "monster spawner", "scaffolding"]
+
+forge:
+  root: " §l§8«§r§9Forge§l§8»§r§7 "
+  toggle: true
+  int:
+    rename: 2
+    repair: 5
+    limit:
+      enchant: 7
+      rename: 30
+  form:
+    title: "§lForge"
+    content:
+      main:
+        - "§7Welcome to §aForge Machine"
+        - ""
+        - "§7Select your Option to Modify your Item"
+      rename:
+        - "§7Rename Your Item:"
+        - ""
+        - "§7The Set of Item have Limit of §b{limit}"
+        - "§7Placeholder:"
+        - "§7- §f& - §7Color Code [0 - 9, a - e]"
+        - "§7- §f# - §7Line Break"
+        - "§7Cost: §f{xp}xp"
+      repair:
+        - "§7Are You Sure You Want to Repair your Item?"
+        - ""
+        - "§7Item: §f{item}"
+        - "§7Damage: §f{damage}"
+        - "§7Cost: §f{xp}xp"
+      enchant:
+        - "§7Enchanting : §r{item}"
+        - "§7Enchant your Holding Item"
+        - ""
+        - "§7Your XP Level: §f{xp}"
+        - "§7Refreshing the page may chance"
+        - "§7to get higher levels and enchants!"
+    buttons:
+      rename: ["§0Item Rename\n§7Tap to Rename", 0, "textures/ui/color_picker"]
+      repair: ["§0Item Repair\n§7Tap to Repair", 0, "textures/ui/hammer_l"]
+      enchant: ["§0Item Enchant\n§7Tap to Enchant", 0, "textures/ui/smithing_icon"]
+      refresh: ["§0Refresh Enchant\n§7Tap to Refresh", 0, "textures/ui/refresh_hover"]
+      select: ["§0{name} ({lvl})\n§7Cost: §2{cost}exp-lvl", 0, "textures/ui/icon_recipe_equipment"]
+    input: "§7Set Item Name/Lore: "
+    toggle: "§7Set a Lore?" 
+  text:
+    xp: "{root} You dont have enough xp orbs."
+    repair:
+      item: "{root} Your item in your hand has been repaired!"
+      already: "{root} This item in your hand doesnt have damage."
+      notrepair: "{root} This object cannot be repairable."
+    rename:
+      input: "{root} Enter atleast a word!"
+      item: "{root} Your item {type} in your hand has been set to {item}."
+      exist: "{root} That item in your hand is not a object!"
+      cant: "{root} You cannot set this item!"
+      limit: "{root} The limit of setting an item name is {limit}"
+    enchant:
+      item: "{root} There are no enchantments available for this item!"
+      level: "{root} You don't have enough levels!"
+      same: "{root} You can't enchant the same enchantment again!"
+      dupe: "{root} Are you trying to swindle me?"
+      limit: "{root} Enchantment limit of {limit} reached."
+      notench: "{root} You cannot enchant this item!"
+      success: "{root} You successfully enchant your §r{item}"
+  rename:
+    bans:
+      - "Kit"
+      - "tier"
+  enchants:
+    sword:
+      - sharpness:10
+      - unbreaking:10
+      - looting:10
+      - fire_aspect:5
+    armor:
+      - protection:10
+      - thorns:5
+      - unbreaking:10
+      - feather_falling:5
+      - blast_protection:10
+      - projectile_protection:10
+    tool:
+      - fortune:5
+      - unbreaking:10
+      - efficiency:10
+    bow:
+      - punch:2
+      - power:5
+      - unbreaking:10
+      - flame:5
+      - infinity:1
+
+# G
+
+# H
+
+# I
+indicator: 
+  enable: true
+  version:
+    event: false
+    entity: true
+
+item:
+  display:
+    enable: false
+    format: "§r{name} §7x§b{count}"
+    # worlds that you want to show nametags
+    worlds: ["placeholder"]
+    # items that you want to disable showing nametags
+    items: []
+  cooldown:
+    enable: true
+    delay:
+      item: 15
+      food: 10
+    list:
+      item: [368]
+      food: [322, 466]
+    text: " §l§8«§r§9CD§l§8»§r§7 §r§7Cooling down: §f{cd}s"
+
+# tested
+# Login: Event with Special Message
+login:
+  whitelist:
+    reason: "§7- §fPocket§bPinas §7-\n§eServer is on Maintenance\n§aPlease come back later!\n§7-----"
+  join:
+    particlespawn: true
+    alwaysspawn: true
+    effect:
+      enable: true
+      guardian: true
+      sideeffect: 15
+      duration: 5
+    title:
+      enable: true
+      format: ["§fWelcome to §fPocket§bPinas", "§b{player}"]
+    welcome:
+      - " §l§8«§r§aGreetings§l§8»§r§7 §7Welcome to §fPocket§bPinas"
+      - ""
+      - "§7- A Minecraft Philippines Bedrock"
+      - "§7- Server That Focuses on New Modes."
+      - ""
+      - "§7- Your Friendly Minecraft Server"
+      - "§7- Founded by: §bLentou §7(§eHytlenz§7)"
+      - ""
+      - "§7- Site: §ehttps://web.pocketpinas.cf"
+      - ""
+    format:
+      default: " §l§8«§r§aJoin§l§8»§r§7 §b{player} §8(§r{tag}§8)"
+      first: " §l§8«§r§bFirstJoin§l§8»§r§7 §b{player}"
+  quit:
+    format:
+      default: " §l§8«§r§cQuit§l§8»§r§7 §b{player} §8(§r{tag}§8)"
+      first: " §l§8«§r§bFirstQuit§l§8»§r§7 §b{player}"
+    
+# tested | drops have bugs
+# Mine: Event with Special Feature
+mine:
+  enable: true
+  delay: 30
+  auto-pickup: true
+  worlds: ["default"]
+  replaced: "minecraft:bedrock"
+  #blocks: [14+0, 15+0, 16+0, 21+0, 56+0, 73+0, 129+0, 153+0, 17+0, 17+1, 17+2, 17+3, 162+0, 162+1]
+  blocks:
+    - "minecraft:14:0=minecraft:1:0"
+    - "minecraft:15:0"
+    - "minecraft:16:0"
+    - "minecraft:21:0"
+  drops:
+    creative: false
+    items:
+      "130:0":
+        drops:
+          - "130:0:1:1"
+      "15:0":
+        drops:
+          - "452:0:4:1"
+      "14:0":
+        drops:
+          - "371:0:3:1"
+
+job:
+  prefix: " §l§8«§r§9Job§l§8»§r§7"
+  tip: 
+    message: "{prefix} You Earned §f${bal} §7/ §e{exp} exp"
+    progress: "{prefix} Progress: {progress}/{jobgoal}"
+  worlds:
+    - "pcpfacs4"
+  roles:
+    worker:
+      goal: 150
+      progress: 1
+      salary:
+        bal: [90000, 150000]
+        exp: [6000, 10000]
+      work: "break"
+      task:
+        - "14:0"
+        - "15:0"
+        - "16:0"
+        - "21:0"
+        - "56:0"
+        - "73:0"
+        - "129:0"
+        - "153:0"
+        - "17:0"
+        - "17:1"
+        - "17:2"
+        - "17:3"
+        - "18:0"
+        - "18:1"
+        - "18:2"
+        - "18:3"
+        - "18:4"
+        - "161:0"
+        - "161:1"
+        - "162:0"
+        - "162:1"
+        - "103:0"
+        - "86:0"
+        - "59:7"
+        - "244:7"
+        - "142:7"
+        - "141:7"
+    hunter:
+      goal: 50
+      progress: 2
+      salary:
+        bal: [70000, 100000]
+        exp: [5000, 10000]
+      work: "kill"
+      task: []
+
+# tested
+# Motd: Task with Special Message /
+motd:
+  enable: false
+  #Format if the motd is disable
+  format: "§l§fP§bC§fP §r§8[§f{players}§8/§7{maxplayers}§8]"
+  delay: 100
+  message: 
+    - "§l§fP§bC§fP §8| §r§aTowns"
+    - "§l§fP§bC§fP §8| §r§bPlots"
+    - "§l§fP§bC§fP §8| §r§cDuels"
+    - "§l§fP§bC§fP §8| §r§dGames"
+
+# not tested
+# Restart: Task with Special Feature /
+restart:
+  prefix: " §l§8«§r§fRestart§l§8»§r§7"
+  enable: true
+  time: 300 # 5 hours
+  int: [120, 60, 25, 10, 5, 4, 3, 2, 1]
+  text:
+    reset: "§7- §fPocket§bPinas §7-\n§eServer is restarted\n§aPlease come back and play again!\n§7-----"
+    countdown: "{prefix} Server will restart in §c{seconds}s"
+  title: ["§fRestart in", "§c{seconds}s"] 
+
+# tested
+relic:
+  enable: true
+  prefix: " §l§8«§r§9Relics§l§8»§r§7" /
+  chances:
+    stone: 5
+  text:
+    exists: "{prefix} Tier/Loot no longer exists, Here's another one for you."
+    found: "{prefix} You found a {relic}"
+  title:
+    need: ["§fLvl §b{reliclvl}+", "§7Need to Open this Relic"]
+    serial: ["§cSERIAL ERROR", "§7Serial Key Mismatch"]
+  lore: ["§r§fRequired Level: §7{reqlvl}", "§r§fContains: §7{loot}", "§r§eTap it anywhere to open"]
+ 
+scoreboard:
+  enable:
+    self: true
+    perworld: false
+    default: true
+  title: " §l§8«§r§fP§bC§fP§l§8»§r§7 " /
+  lines:
+    default:
+      - " §8[§7{date}§8|§8{time}§8] "
+      - " §r{display_name}§r "
+      - " §l§fPERSONAL§r "
+      - "  §7Ping: §r{ping}ms " 
+      - "  §7List: §f{online}§8/§7{max_online} "
+      - " §l§fSTATS§r §b/stats "
+      - " §eweb.pocketpinas.cf "
+    pcpwars8:
+      - " §7{date} {time} "
+      - " §r{display_name}§r "
+      - " §l§fPERSONAL§r "
+      - "  §7Ping: §r{ping}ms " 
+      - "  §7List: §f{online}§8/§7{max_online} "
+      - "  §7Rank: §r{group} "
+      - " §l§fSTATS§r §b/stats §7| §b/sb "
+      - " §eweb.pocketpinas.cf "
+    pcpfacs4:
+      - " §7{date} {time} "
+      - " §r{display_name}§r"
+      - " §l§fPERSONAL§r "
+      - "  §7Ping: §r{ping}ms " 
+      - "  §7List: §f{online}§8/§7{max_online} "
+      - "  §7Lvl: §b{lvl} "
+      - "  §7Exp: §f{exp}§8/§7{texp} "
+      - "  §7Rank: §r{group} "
+      - " §l§fTOWNY§r "
+      - "  §7Name: §r§a{fname} "
+      - "  §7Role: §r§2{frole} "
+      - "  §7Profession: §r{profession} "
+      - "  §7Class: §r{class} "
+      - " §l§fSTATS§r §b/stats §7| §b/sb "
+      - " §eweb.pocketpinas.cf "
+    pcpplots:
+      - " §7{date} {time} "
+      - " §r{display_name}§r"
+      - " §l§fPERSONAL§r "
+      - "  §7Ping: §r{ping}ms "
+      - "  §7List: §f{online}§8/§7{max_online} "
+      - "  §7Lvl: §b{lvl} "
+      - "  §7Exp: §f{exp}§8/§7{texp} "
+      - "  §7Rank: §r{group} "
+      - " §l§fPLOTS§r "
+      - "  §7Role: §r{role} "
+      - "  §7Epithet: §r{epithet} "
+      - " §l§fSTATS§r §b/stats §7| §b/sb "
+      - " §eweb.pocketpinas.cf "
+
+skills:
+  prefix: " §l§8«§r§6Skills§l§8» §r§7"
+  list:
+    - "Sword"
+    - "Shovel"
+    - "Pickaxe"
+    - "Axe"
+    - "Hoe"
+  text: "{prefix} You are now Lvl: §b{slvl} §7on §e{stype}"
+    
+# tested
+verify:
+  enable: true
+  title: "§lVerify"
+  message: " §l§8«§r§9Verify§l§8» §r§b{player} §7is now verified! congrats!"
+  content:
+    opening:
+      - " §7Welcome to §fPocket§bPinas "
+      - ""
+      - " §7Since you're new in this server "
+      - " §7You must read first our terms and conditions "
+      - ""
+      - "§7A. The Server is not liable to any loss that any of its service may generate. "
+      - "§7B. The Server will not compensate losses that was made by the player or any other third-party. "
+      - "§7C. The Server will keep its right to suspend any account that will violate its rules. "
+      - "§7D. The Player under their local legal age is assumed to have had seek for a parental consent. "
+      - "§7E. The Player fully understands the risks that may fall before them. "
+      - "§7F. The Player is, was, and will, never be forced to pay for any of our services. "
+      - "§7G. The Player must abide all of the existing rules and regulation for the greater good. "
+      - "§7H. Both parties (The Server and The Player) must abide the Laws of the Land of the Republic of the Philippines, as the Server's origin; Therefore,"
+      - "§7I. Finally, Both parties (The Server and The Player) should not be held responsible in case of a project termination by any means. "
+    ending:
+      - "   §7You are now Verified!         "
+      - ""
+      - " §7Thank you for reading the term and conditions. "
+      - " §7Take this reward "
+      - " §7To start your journey here with "
+      - " §7Staffs and Friends "
+      - ""
+      - " §7- §bManagement"
+  rewards:
+    - "grant {player} gems 50"
+    - "grant {player} elo 10"
+    
+...

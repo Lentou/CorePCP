@@ -1,0 +1,95 @@
+---
+# CorePCP Route Configuration
+text:
+  prefix: " §l§8«§r§9Route§l§8»§r§7"
+  desc: "§fthe instance route dungeon for pocketpinas"
+  worlds: ["pcp-town"]
+  text:
+    cantuse: "{prefix} You cannot use this command here."
+    notexists: "{prefix} World doesnt exists"
+    title: ["§eWelcome to", "§f- {dungeon} §f-"]
+    close: "{prefix} {type} Currently Closed!"
+    level: "{prefix} Your level doesnt meet the requirements!"
+
+form:
+  title: "§lRoutes"
+
+list:
+  daily:
+    title: "§lDaily Instance"
+    name: "§aDaily Instance"
+    button: "§a{name}\n§7Tap to Proceed"
+    enable: true
+    dungeons:
+      forest:
+        name: "§aBalete's §fForest Ruins"
+        world: ["pcp-forest", true, 0, 0, 0]
+        enable: true
+        level: 1
+        button: "{name}\n§7Tap to Proceed"
+        label:
+          - ""
+          - "§7Welcome §b{player}!"
+          - ""
+          - "{name}"
+          - "§7- The forest full of neutral monsters"
+          - "§7- and evolved plants and mobs"
+          - ""
+          - "§7- Legends said that this forest"
+          - "§7- are being infected by the"
+          - "§7- unspecified plague."
+          - ""
+          - "§7- §fLevel Requirements: §b{level}"
+          - "§7- §fOpen: {bool}"
+          - ""
+          - "§7- Always Ready your Gear, Chaser!"
+          - ""
+      wall:
+        name: "§fBarisha's §eWalled City"
+        world: ["pcp-wall", true, 0, 0, 0]
+        enable: true
+        level: 50
+        button: "{name}\n§0Tap to Proceed"
+        label:
+          - ""
+          - "§7Welcome §b{player}!"
+          - ""
+          - "{name}"
+          - "§7- The walled city that invade"
+          - "§7- lots of mobs years ago"
+          - ""
+          - "§7- Barisha is rich and stated city"
+          - "§7- but Legions of Lilith"
+          - "§7- are invading the city."
+          - ""
+          - "§7- §fLevel Requirements: §b{level}"
+          - "§7- §fOpen: {bool}"
+          - ""
+          - "§7- Always Ready your Gear, Chaser!"
+          - ""
+      city:
+        name: "§bCentral §aIntramuros"
+        world: ["pcp-city", true, 0, 0, 0]
+        enable: false
+        level: 100
+        button: "{name}\n§0Tap to Proceed"
+        label:
+          - ""
+          - "§7Welcome §b{player}!"
+          - ""
+          - "{name}"
+          - "§7- The imperial city with"
+          - "§7- less crime rate and modernized continent"
+          - ""
+          - "§7- Central Intramuros is now"
+          - "§7- attraction of upcoming"
+          - "§7- disastrous group of monsters."
+          - ""
+          - "§7- §fLevel Requirements: §b{level}"
+          - "§7- §fOpen: {bool}"
+          - ""
+          - "§7- Always Ready your Gear, Chaser!"
+          - ""
+  #raid:
+  #event:
+...

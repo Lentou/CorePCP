@@ -1,0 +1,73 @@
+title: "§r§l§9Magellan's Stash"
+rate: 40
+level_requirement: 20
+loots:
+  Bundle of Balance:
+    type: 'cmd'
+    commands:
+      - 'int %player% +bal 100000 300000'
+      - 'grant %player% exp 1500'
+  Magellan Kit:
+    type: 'item'
+    items:
+      helmet:
+        name: "§r§l§8>> §r§9Magellan's Hat §l§8<<§r"
+        id: 306
+        meta: 0
+        amount: 1
+        enchantments:
+          protection: 1
+      chestplate:
+        name: "§r§l§8>> §r§9Magellan's Coat §l§8<<§r"
+        id: 307
+        meta: 0
+        amount: 1
+        enchantments:
+          protection: 2
+      leggings:
+        name: "§r§l§8>> §r§9Magellan's Leggings §l§8<<§r"
+        id: 308
+        meta: 0
+        amount: 1
+        enchantments:
+          fire_protection: 2
+          protection: 2
+      boots:
+        name: "§r§l§8>> §r§9Magellan's Boots §l§8<<§r"
+        id: 309
+        meta: 0
+        amount: 1
+        enchantments:
+          fire_protection: 2
+          protection: 2
+  Coins:
+    type: 'cmd'
+    commands:
+      - 'int %player% +bal 5000 10000'
+      - 'grant %player% exp 2130'
+  Treasures:
+    type: 'item'
+    items:
+      diamond:
+        name: "§r§l§8>> §r§bStash of Diamonds §l§8<<§r"
+        id: 264
+        meta: 0
+        amount: 32
+        enchantments: []
+      golds:
+        name: "§r§l§8>> §r§bStash of Golds §l§8<<§r"
+        id: 266
+        meta: 0
+        amount: 20
+        enchantments: []
+      emerald:
+        name: "§r§l§8>> §r§aStash of Emeralds §l§8<<§r"
+        id: 388
+        meta: 0
+        amount: 10
+        enchantments: []
+  Experience:
+    type: 'cmd'
+    commands:
+      - 'grant %player% exp 1239'
+      - 'grant %player% elo 10'

@@ -1,0 +1,1118 @@
+---
+# CorePCP Shop Configuration
+teleport:
+  misc: [186, 74, 370, "pcp-faction-wild"] #spawner shop/
+  gear: [195, 74, 382, "pcp-faction-wild"] #kits shop/
+  food: [205, 74, 392, "pcp-faction-wild"] #consume shop/
+  dye: [195, 74, 403, "pcp-faction-wild"] #colored blocks/
+  farm: [212, 74, 404, "pcp-faction-wild"] #farm/ 
+  build: [185, 74, 398, "pcp-faction-wild"] #build/
+  mall: [307, 74, 398, "pcp-faction-wild"] #mall/ 
+  secret: [288, 79, 337, "pcp-faction-wild"] #secret
+  
+text:
+  prefix: " §l§8«§r§9Shop§l§8»§r§7"
+  enable: true
+  desc: "§fWhere goods or services are sold; a store."
+  shop:
+    invalid: "{prefix} You dont have enough §b{value}"
+    invfull: "{prefix} Your inventory is full"
+    already: "{prefix} You already have §b{item}" #for commands
+    perm: "{prefix} You dont have permission to view at this shop"
+    disable: "{prefix} This system is currently disabled"
+    status: "{prefix} You successfully §e{status} §7the §b{item} §9{quantity}x §7worth §f${cost}"
+    store: "{prefix} World or Shop doesnt exists!"
+    teleport: "{prefix} You are successfully teleported to §b{shop} §7Shop"
+    usage: "{prefix} Usage: §b/shop <type> <player>"
+
+form:
+  toggle: "§7Sell Item?"
+  slider: "§7Quantity"
+  title: "§lShop"
+  menu:
+    - "§7Welcome §b{player}§7, Select any Shop"
+    - "§7To Proceed and Teleport!"
+  buy:
+    - "§7Buy: §f${cost}"
+    - "§7Item Name: §b{name}"
+  sell:
+    - "§7Sell: §f${cost}"
+    - "§7Item Name: §b{name}"
+  buysell:
+    - "§7Buy: §f${buy}"
+    - "§7Sell: §f${sell}"
+    - "§7Item Name: §b{name}"
+  cmd:
+    - "§7Buy: §f${cost}"
+    - "§7Item Name: §b{name}"
+    - ""
+    - "§7Are you sure you want to buy this item?"
+
+shop:
+  misc:
+    title: "Misc Shop"
+    image: "textures/ui/icon_deals"
+    category:
+      item:
+        name: "Items"
+        image: "textures/ui/icon_recipe_item"
+        items:
+          - name: "Monster Spawner"
+            image: "textures/blocks/mob_spawner"
+            id: "52:0"
+            buy: 5000000
+            quantity: 64
+          - name: "Experience Bottle"
+            image: "textures/items/experience_bottle"
+            id: "384:0"
+            buy: 50000
+            quantity: 64
+          - name: "Water Bucket"
+            image: "textures/items/bucket_water"
+            id: "325:8"
+            buy: 500
+            quantity: 1
+          - name: "Lava Bucket"
+            image: "textures/items/bucket_lava"
+            id: "325:10"
+            buy: 500
+            quantity: 1
+          - name: "Shulker Box"
+            image: "textures/blocks/shulker_top_undyed"
+            id: "205:0"
+            buy: 10000
+            quantity: 1
+          - name: "TNT"
+            image: "textures/blocks/tnt_side"
+            id: "46:0"
+            buy: 5000
+            quantity: 64
+          - name: "Hopper"
+            image: "textures/items/hopper"
+            id: "410:0"
+            buy: 10000
+            quantity: 64
+          - name: "Cauldron"
+            image: "textures/items/cauldron"
+            id: "380:0"
+            buy: 1000
+            quantity: 64
+          - name: "Bookshelf"
+            image: "textures/blocks/bookshelf"
+            id: "47:0"
+            buy: 1000
+            quantity: 64
+          - name: "Ender Chest"
+            image: "textures/blocks/ender_chest_front"
+            id: "130:0"
+            buy: 5000
+            quantity: 64
+          - name: "Barrel"
+            image: "textures/blocks/barrel_side"
+            id: "-203:0"
+            buy: 2000
+            quantity: 64
+      essentials:
+        name: "Essentials"
+        image: "textures/ui/icon_best3"
+        items:
+          - name: "Coal"
+            image: "textures/items/coal"
+            id: "263:0"
+            buy: 50
+            sell: 25
+            quantity: 64
+          - name: "Iron Ingot"
+            image: "textures/items/iron_ingot"
+            id: "265:0"
+            buy: 400
+            sell: 250
+            quantity: 64
+          - name: "Gold Ingot"
+            image: "textures/items/gold_ingot"
+            id: "266:0"
+            buy: 500
+            sell: 300
+            quantity: 64
+          - name: "Diamond"
+            image: "textures/items/diamond"
+            id: "264:0"
+            buy: 1000
+            sell: 500
+            quantity: 64
+          - name: "Coal Block"
+            image: "textures/blocks/coal_block"
+            id: "173:0"
+            buy: 4500
+            sell: 2500
+            quantity: 64
+          - name: "Iron Block"
+            image: "textures/blocks/iron_block"
+            id: "42:0"
+            buy: 3600
+            sell: 1600
+            quantity: 64
+          - name: "Gold Block"
+            image: "textures/blocks/gold_block"
+            id: "41:0"
+            buy: 4500
+            sell: 2300
+            quantity: 64
+          - name: "Diamond Block"
+            image: "textures/blocks/diamond_block"
+            id: "57:0"
+            buy: 9000
+            sell: 4000
+            quantity: 64
+      eggs:
+        name: "Eggs"
+        image: "textures/items/egg_npc"
+        items:
+          - name: "Chicken"
+            image: "textures/items/egg_chicken"
+            id: "383:10"
+            buy: 10000000
+            quantity: 64
+          - name: "Cow"
+            image: "textures/items/egg_cow"
+            id: "383:11"
+            buy: 10000000
+            quantity: 64
+          - name: "Pig"
+            image: "textures/items/egg_pig"
+            id: "383:12"
+            buy: 10000000
+            quantity: 64
+          - name: "Skeleton"
+            image: "textures/items/egg_skeleton"
+            id: "383:34"
+            buy: 20000000
+            quantity: 64
+          - name: "Zombie"
+            image: "textures/items/egg_zombie"
+            id: "383:32"
+            buy: 20000000
+            quantity: 64
+          - name: "Blaze"
+            image: "textures/items/egg_blaze"
+            id: "383:43"
+            buy: 20000000
+            quantity: 64
+  gear:
+    title: "Gear Shop"
+    image: "textures/ui/icon_recipe_equipment"
+    category:
+      armors:
+        name: "Armors"
+        image: "textures/ui/icon_armor"
+        items:
+          - name: "Diamond Helmet"
+            image: "textures/items/diamond_helmet"
+            id: "310:0"
+            buy: 20000
+            quantity: 1
+          - name: "Diamond Chestplate"
+            image: "textures/items/diamond_chestplate"
+            id: "311:0"
+            buy: 20000
+            quantity: 1
+          - name: "Diamond Leggings"
+            image: "textures/items/diamond_leggings"
+            id: "312:0"
+            buy: 20000
+            quantity: 1
+          - name: "Diamond Boots"
+            image: "textures/items/diamond_boots"
+            id: "313:0"
+            buy: 20000
+            quantity: 1
+          - name: "Netherite Helmet"
+            image: "textures/items/netherite_helmet"
+            id: "748:0"
+            buy: 100000
+            quantity: 1
+          - name: "Netherite Chestplate"
+            image: "textures/items/netherite_chestplate"
+            id: "749:0"
+            buy: 100000
+            quantity: 1
+          - name: "Netherite Leggings"
+            image: "textures/items/netherite_leggings"
+            id: "750:0"
+            buy: 100000
+            quantity: 1
+          - name: "Netherite Boots"
+            image: "textures/items/netherite_boots"
+            id: "751:0"
+            buy: 100000
+            quantity: 1
+      tools:
+        name: "Tools"
+        image: "textures/ui/smithing_icon"
+        items:
+          - name: "Diamond Sword"
+            image: "textures/items/diamond_sword"
+            id: "276:0"
+            buy: 50000
+            quantity: 1
+          - name: "Diamond Axe"
+            image: "textures/items/diamond_axe"
+            id: "279:0"
+            buy: 50000
+            quantity: 1
+          - name: "Diamond Pickaxe"
+            image: "textures/items/diamond_pickaxe"
+            id: "278:0"
+            buy: 50000
+            quantity: 1
+          - name: "Diamond Shovel"
+            image: "textures/items/diamond_shovel"
+            id: "277:0"
+            buy: 50000
+            quantity: 1
+          - name: "Diamond Hoe"
+            image: "textures/items/diamond_hoe"
+            id: "293:0"
+            buy: 50000
+            quantity: 1
+          - name: "Netherite Sword"
+            image: "textures/items/netherite_sword"
+            id: "743:0"
+            buy: 100000
+            quantity: 1
+          - name: "Netherite Axe"
+            image: "textures/items/netherite_axe"
+            id: "746:0"
+            buy: 100000
+            quantity: 1
+          - name: "Netherite Pickaxe"
+            image: "textures/items/netherite_pickaxe"
+            id: "745:0"
+            buy: 100000
+            quantity: 1
+          - name: "Netherite Shovel"
+            image: "textures/items/netherite_shovel"
+            id: "744:0"
+            buy: 100000
+            quantity: 1
+          - name: "Netherite Hoe"
+            image: "textures/items/netherite_hoe"
+            id: "747:0"
+            buy: 100000
+            quantity: 1
+      misc:
+        name: "Misc"
+        image: "textures/ui/icon_best3"
+        items:
+          - name: "Compass"
+            image: "textures/items/compass_item"
+            id: "345:0"
+            buy: 10000
+            quantity: 1
+          - name: "Clock"
+            image: "textures/items/clock_item"
+            id: "347:0"
+            buy: 10000
+            quantity: 1
+          - name: "Flint & Steel"
+            image: "textures/items/flint_and_steel"
+            id: "259:0"
+            buy: 5000
+            quantity: 1
+          - name: "Trident"
+            image: "textures/items/trident"
+            id: "455:0"
+            buy: 30000
+            quantity: 1
+          - name: "Shears"
+            image: "textures/items/shears"
+            id: "359:0"
+            buy: 5000
+            quantity: 1
+          - name: "Shield"
+            image: "textures/ui/fire_resistance_effect"
+            id: "513:0"
+            buy: 30000
+            quantity: 1
+          - name: "Elytra"
+            image: "textures/items/elytra"
+            id: "444:0"
+            buy: 50000
+            quantity: 1
+          - name: "Bow"
+            image: "textures/items/bow_standby"
+            id: "261:0"
+            buy: 15000
+            quantity: 1
+          - name: "Crossbow"
+            image: "textures/items/crossbow_standby"
+            id: "471:0"
+            buy: 30000
+            quantity: 1
+          - name: "Ender Pearl"
+            image: "textures/items/ender_pearl"
+            id: "368:0"
+            buy: 500
+            quantity: 16
+          - name: "Fireworks Boost"
+            image: "textures/items/fireworks"
+            id: "401:0"
+            buy: 1000
+            quantity: 64
+  food:
+    title: "Food Shop"
+    image: "textures/ui/icon_cake"
+    category:
+      fresh:
+        name: "Fresh"
+        image: "textures/ui/icon_carrot"
+        items:
+          - name: "Slice of Melon"
+            image: "textures/items/melon"
+            id: "360:0"
+            buy: 50
+            quantity: 64
+          - name: "Beetroot"
+            image: "textures/items/beetroot"
+            id: "457:0"
+            buy: 50
+            quantity: 64
+          - name: "Apple"
+            image: "textures/items/apple"
+            id: "260:0"
+            buy: 40
+            quantity: 64
+          - name: "Golden Apple"
+            image: "textures/items/apple_golden"
+            id: "322:0"
+            buy: 30000
+            quantity: 64
+          - name: "Enchanted Apple"
+            image: "textures/items/apple_golden"
+            id: "466:0"
+            buy: 50000
+            quantity: 64
+      solid:
+        name: "Solid"
+        image: "textures/ui/icon_cookie"
+        items:
+          - name: "Roasted Chicken"
+            image: "textures/items/chicken_cooked"
+            id: "366:0"
+            buy: 200
+            quantity: 64
+          - name: "Grilled Porkchop"
+            image: "textures/items/porkchop_cooked"
+            id: "320:0"
+            buy: 150
+            quantity: 64
+          - name: "Steak"
+            image: "textures/items/beef_cooked"
+            id: "364:0"
+            buy: 250
+            quantity: 64
+          - name: "Cooked Mutton"
+            image: "textures/items/mutton_cooked"
+            id: "424:0"
+            buy: 180
+            quantity: 64
+          - name: "Fried Rabbit"
+            image: "textures/items/rabbit_cooked"
+            id: "412:0"
+            buy: 120
+            quantity: 64
+          - name: "Grilled Cod"
+            image: "textures/items/fish_cooked"
+            id: "350:0"
+            buy: 50
+            quantity: 64
+          - name: "Cooked Salmon"
+            image: "textures/items/fish_salmon_cooked"
+            id: "463:0"
+            buy: 50
+            quantity: 64
+          - name: "Bread of Life"
+            image: "textures/items/bread"
+            id: "297:0"
+            buy: 0
+            quantity: 10
+          - name: "Mashed Potato"
+            image: "textures/items/potato_baked"
+            id: "393:0"
+            buy: 50
+            quantity: 64
+          - name: "Cookie`s and Cream"
+            image: "textures/items/cookie"
+            id: "357:0"
+            buy: 30
+            quantity: 64
+          - name: "Cream Pie"
+            image: "textures/items/pumpkin_pie"
+            id: "400:0"
+            buy: 70
+            quantity: 64
+          - name: "Cake"
+            image: "textures/items/cake"
+            id: "354:0"
+            buy: 300
+            quantity: 1
+          - name: "Dried Kelp"
+            image: "textures/items/dried_kelp"
+            id: "464:0"
+            buy: 20
+            quantity: 64
+          - name: "Mushroom Stew"
+            image: "textures/items/mushroom_stew"
+            id: "282:0"
+            buy: 50
+            quantity: 1
+          - name: "Beetroot Soup"
+            image: "textures/items/beetroot_soup"
+            id: "459:0"
+            buy: 50
+            quantity: 1
+          - name: "Rabbit Stew"
+            image: "textures/items/rabbit_stew"
+            id: "413:0"
+            buy: 50
+            quantity: 1
+      liquid:
+        name: "Liquid"
+        image: "textures/ui/icon_potion"
+        items:
+          - name: "Water Bottle"
+            image: "textures/items/potion_bottle_drinkable"
+            id: "373:0"
+            buy: 100
+            quantity: 1
+          - name: "Night Vision (3:00)"
+            image: "textures/items/potion_bottle_nightVision"
+            id: "373:5"
+            buy: 3000
+            quantity: 1
+          - name: "Jump Boost (3:00)"
+            image: "textures/items/potion_bottle_jump"
+            id: "373:7"
+            buy: 9000
+            quantity: 1
+          - name: "Fire Resistance (3:00)"
+            image: "textures/items/potion_bottle_fireResistance"
+            id: "373:12"
+            buy: 12000
+            quantity: 1
+          - name: "Speed (3:00)"
+            image: "textures/items/potion_bottle_moveSpeed"
+            id: "373:14"
+            buy: 12000
+            quantity: 1
+          - name: "Regeneration (2:00)"
+            image: "textures/items/potion_bottle_regeneration"
+            id: "373:29"
+            buy: 12000
+            quantity: 1
+          - name: "Strength (0:45)"
+            image: "textures/items/potion_bottle_damageBoost"
+            id: "373:31"
+            buy: 12000
+            quantity: 1
+  dye:
+    title: "Colored Blocks"
+    image: "textures/ui/icon_random"
+    category:
+      dyes:
+        name: "Colored Dyes"
+        image: "textures/ui/icon_spring"
+        items:
+          - name: "Gray Dye"
+            image: "textures/items/dye_powder_gray"
+            id: "351:8"
+            buy: 50
+            quantity: 64
+          - name: "Light Gray Dye"
+            image: "textures/items/dye_powder_silver"
+            id: "351:7"
+            buy: 50
+            quantity: 64
+          - name: "White Dye"
+            image: "textures/items/dye_powder_white_new"
+            id: "351:19"
+            buy: 50
+            quantity: 64
+          - name: "Black Dye"
+            image: "textures/items/dye_powder_black_new"
+            id: "351:16"
+            buy: 50
+            quantity: 64
+          - name: "Brown Dye"
+            image: "textures/items/dye_powder_brown_new"
+            id: "351:17"
+            buy: 50
+            quantity: 64
+          - name: "Red Dye"
+            image: "textures/items/dye_powder_red"
+            id: "351:1"
+            buy: 50
+            quantity: 64
+          - name: "Orange Dye"
+            image: "textures/items/dye_powder_orange"
+            id: "351:14"
+            buy: 50
+            quantity: 64
+          - name: "Yellow Dye"
+            image: "textures/items/dye_powder_yellow"
+            id: "351:11"
+            buy: 50
+            quantity: 64
+          - name: "Lime Dye"
+            image: "textures/items/dye_powder_lime"
+            id: "351:10"
+            buy: 50
+            quantity: 64
+          - name: "Green Dye"
+            image: "textures/items/dye_powder_green"
+            id: "351:2"
+            buy: 50
+            quantity: 64
+          - name: "Cyan Dye"
+            image: "textures/items/dye_powder_cyan"
+            id: "351:6"
+            buy: 50
+            quantity: 64
+          - name: "Light Blue Dye"
+            image: "textures/items/dye_powder_light_blue"
+            id: "351:12"
+            buy: 50
+            quantity: 64
+          - name: "Blue Dye"
+            image: "textures/items/dye_powder_blue_new"
+            id: "351:18"
+            buy: 50
+            quantity: 64
+          - name: "Purple Dye"
+            image: "textures/items/dye_powder_purple"
+            id: "351:5"
+            buy: 50
+            quantity: 64
+          - name: "Magenta Dye"
+            image: "textures/items/dye_powder_magenta"
+            id: "351:13"
+            buy: 50
+            quantity: 64
+          - name: "Pink Dye"
+            image: "textures/items/dye_powder_pink"
+            id: "351:9"
+            buy: 50
+            quantity: 64
+          - name: "Bone Meal"
+            image: "textures/items/dye_powder_white"
+            id: "351:15"
+            buy: 100
+            quantity: 64
+      preset:
+        name: "Preset"
+        image: "textures/ui/icon_crafting"
+        items:
+          - name: "Terracotta"
+            image: "textures/blocks/hardened_clay"
+            id: "172:0"
+            buy: 100
+            quantity: 64
+          - name: "Glass"
+            image: "textures/blocks/glass"
+            id: "20:0"
+            buy: 50
+            quantity: 64
+  farm:
+    title: "Farm Shop"
+    image: "textures/ui/icon_carrot"
+    category:
+      seeds:
+        name: "Seeds"
+        image: "textures/ui/icon_new"
+        items:
+          - name: "Wheat Seeds"
+            image: "textures/items/seeds_wheat"
+            id: "295:0"
+            buy: 40
+            quantity: 64
+          - name: "Pumpkin Seeds"
+            image: "textures/items/seeds_pumpkin"
+            id: "361:0"
+            buy: 40
+            quantity: 64
+          - name: "Melon Seeds"
+            image: "textures/items/seeds_melon"
+            id: "362:0"
+            buy: 40
+            quantity: 64
+          - name: "Beetroot Seeds"
+            image: "textures/items/seeds_beetroot"
+            id: "458:0"
+            buy: 40
+            quantity: 64
+          - name: "Sugarcane"
+            image: "textures/items/reeds"
+            id: "338:0"
+            buy: 80
+            sell: 30
+            quantity: 64
+          - name: "Potato"
+            image: "textures/items/potato"
+            id: "392:0"
+            buy: 80
+            sell: 30
+            quantity: 64
+          - name: "Carrot"
+            image: "textures/items/carrot"
+            id: "391:0"
+            buy: 80
+            sell: 30
+            quantity: 64
+          - name: "Oak Sapling"
+            image: "textures/blocks/sapling_oak"
+            id: "6:0"
+            buy: 50
+            quantity: 64
+          - name: "Spruce Sapling"
+            image: "textures/blocks/sapling_spruce"
+            id: "6:1"
+            buy: 50
+            quantity: 64
+          - name: "Birch Sapling"
+            image: "textures/blocks/sapling_birch"
+            id: "6:2"
+            buy: 50
+            quantity: 64
+          - name: "Jungle Sapling"
+            image: "textures/blocks/sapling_jungle"
+            id: "6:3"
+            buy: 50
+            quantity: 64
+          - name: "Cactus"
+            image: "textures/blocks/cactus_side"
+            id: "81:0"
+            buy: 100
+            sell: 40
+            quantity: 64
+          - name: "Netherwart"
+            image: "textures/items/nether_wart"
+            id: "372:0"
+            buy: 200
+            quantity: 64
+      crops:
+        name: "Crops"
+        image: "textures/items/icon_summer"
+        items:
+          - name: "Wheat"
+            image: "textures/items/wheat"
+            id: "296:0"
+            sell: 50
+            quantity: 64
+          - name: "Pumpkin"
+            image: "textures/blocks/pumpkin_side"
+            id: "86:0"
+            sell: 100
+            quantity: 64
+          - name: "Melon"
+            image: "textures/blocks/melon_side"
+            id: "103:0"
+            sell: 100
+            quantity: 64
+          - name: "Beetroot"
+            image: "textures/items/beetroot"
+            id: "457:0"
+            sell: 20
+            quantity: 64
+          - name: "Netherwart Block"
+            image: "textures/blocks/nether_wart_block"
+            id: "214:0"
+            sell: 1800
+            quantity: 64
+  build:
+    title: "Build Shop"
+    image: "textures/ui/icon_recipe_construction"
+    category:
+      nature:
+        name: "Nature"
+        image: "textures/ui/icon_recipe_nature"
+        items:
+          - name: "Dirt"
+            image: "textures/ui/icon_recipe_nature"
+            id: "3:0"
+            buy: 5
+            sell: 1
+            quantity: 99
+          - name: "Cobblestone"
+            image: "textures/blocks/cobblestone"
+            id: "4:0"
+            buy: 10
+            sell: 5
+            quantity: 99
+          - name: "Grass Block"
+            image: "textures/blocks/grass_side_carried"
+            id: "2:0"
+            buy: 10
+            sell: 5
+            quantity: 99
+          - name: "Stone"
+            image: "textures/blocks/stone"
+            id: "1:0"
+            buy: 30
+            sell: 20
+            quantity: 99
+          - name: "Granite"
+            image: "textures/blocks/stone_granite"
+            id: "1:1"
+            buy: 30
+            sell: 20
+            quantity: 99
+          - name: "Diorite"
+            image: "textures/blocks/stone_diorite"
+            id: "1:3"
+            buy: 30
+            sell: 20
+            quantity: 99
+          - name: "Andesite"
+            image: "textures/blocks/stone_andesite"
+            id: "1:5"
+            buy: 30
+            sell: 20
+            quantity: 99
+          - name: "Oak Log"
+            image: "textures/blocks/log_oak"
+            id: "17:0"
+            buy: 50
+            sell: 30
+            quantity: 99
+          - name: "Spruce Log"
+            image: "textures/blocks/log_spruce"
+            id: "17:1"
+            buy: 50
+            sell: 30
+            quantity: 99
+          - name: "Birch Log"
+            image: "textures/blocks/log_birch"
+            id: "17:2"
+            buy: 50
+            sell: 30
+            quantity: 99
+          - name: "Jungle Log"
+            image: "textures/blocks/log_jungle"
+            id: "17:3"
+            buy: 50
+            sell: 30
+            quantity: 99
+          - name: "Acacia Log"
+            image: "textures/blocks/log_acacia"
+            id: "162:0"
+            buy: 50
+            sell: 30
+            quantity: 99
+          - name: "Dark Oak Log"
+            image: "textures/blocks/log_big_oak"
+            id: "162:1"
+            buy: 50
+            sell: 30
+            quantity: 99
+          - name: "Netherrack"
+            image: "textures/blocks/netherrack"
+            id: "87:0"
+            buy: 50
+            sell: 30
+            quantity: 99
+          - name: "Clay"
+            image: "textures/blocks/clay"
+            id: "82:0"
+            buy: 50
+            sell: 30
+            quantity: 99
+          - name: "Sand"
+            image: "textures/blocks/sand"
+            id: "12:0"
+            buy: 80
+            sell: 50
+            quantity: 99
+          - name: "Soul Sand"
+            image: "textures/blocks/soul_sand"
+            id: "88:0"
+            buy: 100
+            sell: 60
+            quantity: 99
+          - name: "Gravel"
+            image: "textures/blocks/gravel"
+            id: "13:0"
+            buy: 50
+            sell: 30
+            quantity: 99
+          - name: "Glowstone"
+            image: "textures/blocks/glowstone"
+            id: "89:0"
+            buy: 100
+            quantity: 99
+          - name: "Packed Ice"
+            image: "textures/blocks/ice_packed"
+            id: "174:0"
+            buy: 100
+            quantity: 99
+          - name: "Obsidian"
+            image: "textures/blocks/obsidian"
+            id: "49:0"
+            buy: 30000
+            quantity: 99
+          - name: "End Stone"
+            image: "textures/blocks/end_stone"
+            id: "121:0"
+            buy: 15000
+            quantity: 99
+      construction:
+        name: "Construction"
+        image: "textures/ui/icon_recipe_construction"
+        items:
+          - name: "Quartz Block"
+            image: "textures/blocks/quartz_block_top"
+            id: "155:0"
+            buy: 70
+            quantity: 64
+          - name: "Stone Bricks"
+            image: "textures/blocks/stonebrick"
+            id: "98:0"
+            buy: 100
+            quantity: 64
+          - name: "Bricks"
+            image: "textures/blocks/brick"
+            id: "45:0"
+            buy: 100
+            quantity: 64
+  secret:
+    title: "Secret Shop"
+    perm: "secret.shop"
+    image: "textures/ui/icon_map"
+    category:
+      item:
+        name: "Items"
+        image: "textures/ui/icon_recipe_item"
+        items:
+          - name: "Monster Spawner"
+            image: "textures/blocks/mob_spawner"
+            id: "52:0"
+            buy: 2000000
+            quantity: 64
+          - name: "Experience Bottle"
+            image: "textures/items/experience_bottle"
+            id: "384:0"
+            buy: 20000
+            quantity: 64
+          - name: "Water Bucket"
+            image: "textures/items/bucket_water"
+            id: "325:8"
+            buy: 100
+            quantity: 1
+          - name: "Lava Bucket"
+            image: "textures/items/bucket_lava"
+            id: "325:10"
+            buy: 100
+            quantity: 1
+          - name: "Shulker Box"
+            image: "textures/blocks/shulker_top_undyed"
+            id: "205:0"
+            buy: 5000
+            quantity: 1
+          - name: "TNT"
+            image: "textures/blocks/tnt_side"
+            id: "46:0"
+            buy: 1000
+            quantity: 64
+          - name: "Hopper"
+            image: "textures/items/hopper"
+            id: "410:0"
+            buy: 1000
+            quantity: 64
+          - name: "Cauldron"
+            image: "textures/items/cauldron"
+            id: "380:0"
+            buy: 500
+            quantity: 64
+          - name: "Bookshelf"
+            image: "textures/blocks/bookshelf"
+            id: "47:0"
+            buy: 500
+            quantity: 64
+          - name: "Ender Chest"
+            image: "textures/blocks/ender_chest_front"
+            id: "130:0"
+            buy: 100
+            quantity: 64
+          - name: "Barrel"
+            image: "textures/blocks/barrel_side"
+            id: "-203:0"
+            buy: 200
+            quantity: 64
+      eggs:
+        name: "Eggs"
+        image: "textures/items/egg_npc"
+        items:
+          - name: "Chicken"
+            image: "textures/items/egg_chicken"
+            id: "383:10"
+            buy: 5000000
+            quantity: 64
+          - name: "Cow"
+            image: "textures/items/egg_cow"
+            id: "383:11"
+            buy: 5000000
+            quantity: 64
+          - name: "Pig"
+            image: "textures/items/egg_pig"
+            id: "383:12"
+            buy: 5000000
+            quantity: 64
+          - name: "Skeleton"
+            image: "textures/items/egg_skeleton"
+            id: "383:34"
+            buy: 10000000
+            quantity: 64
+          - name: "Zombie"
+            image: "textures/items/egg_zombie"
+            id: "383:32"
+            buy: 10000000
+            quantity: 64
+          - name: "Blaze"
+            image: "textures/items/egg_blaze"
+            id: "383:43"
+            buy: 10000000
+            quantity: 64
+  mall:
+    title: "Mall Shop"
+    image: "textures/ui/icon_blackfriday"
+    category:
+      clothes:
+        name: "Clothes"
+        image: ""
+        items:
+          - name: "League Merch"
+            image: ""
+            perm: "core.league"
+            buy: 300
+            type: "gems"
+            cmds:
+              - "grant {player} exp 2500"
+          - name: "Fallen Dragon Set"
+            image: ""
+            perm: "core.fallen"
+            buy: 500
+            type: "gems"
+            cmds:
+              - "grant {player} exp 3500"
+          - name: "Crown Set"
+            image: ""
+            perm: "core.crown"
+            buy: 200
+            type: "gems"
+            cmds:
+              - "grant {player} exp 2500"
+          - name: "Safety Gear"
+            image: ""
+            perm: "core.safety"
+            buy: 100
+            type: "gems"
+            cmds:
+              - "grant {player} exp 1500"
+          - name: "Hotrod"
+            image: ""
+            perm: "core.hotrod"
+            buy: 50
+            type: "gems"
+            cmds:
+              - "grant {player} exp 1500"
+          - name: "Maple Shield"
+            perm: "core.maple"
+            buy: 50
+            type: "gems"
+            cmds:
+              - "grant {player} exp 1500"
+          - name: "Tempest Shield"
+            image: ""
+            perm: "core.maple"
+            buy: 50
+            type: "gems"
+            cmds:
+              - "grant {player} exp 1500"
+          - name: "Jetpack"
+            image: ""
+            perm: "core.jetpack"
+            buy: 100
+            type: "gems"
+            cmds:
+              - "grant {player} exp 1500"
+      ggranks:
+        name: "Glorious Ranks"
+        image: ""
+        items:
+          - name: "Vidame (30days)"
+            image: ""
+            perm: "core.rank.vidame"
+            buy: 100
+            type: "gems"
+            cmds:
+              - "temprank set {player} Vidame 30d"
+          - name: "Vidame (Permanent)"
+            image: ""
+            perm: "core.rank.vidame"
+            buy: 150
+            type: "gems"
+            cmds:
+              - "setgroup {player} Vidame"
+          - name: "Dominus (30days)"
+            image: ""
+            perm: "core.rank.dominus"
+            buy: 200
+            type: "gems"
+            cmds:
+              - "temprank set {player} Dominus 30d"
+          - name: "Dominus (Permanent)"
+            image: ""
+            perm: "core.rank.dominus"
+            buy: 250
+            type: "gems"
+            cmds:
+              - "setgroup {player} Dominus"
+          - name: "Archon (30days)"
+            image: ""
+            perm: "core.rank.archon"
+            buy: 300
+            type: "gems"
+            cmds:
+              - "temprank set {player} Archon 30d"
+          - name: "Archon (Permanent)"
+            image: ""
+            perm: "core.rank.archon"
+            buy: 350
+            type: "gems"
+            cmds:
+              - "setgroup {player} Archon"
+      balranks:
+        name: "Balance Ranks"
+        image: ""
+        items:
+          - name: "Esquire (Permanent)"
+            image: ""
+            perm: "core.rank.esquire"
+            buy: 5000000
+            type: "balance"
+            cmds:
+              - "setgroup {player} Esquire"
+          - name: "Nobile (Permanent)"
+            image: ""
+            perm: "core.rank.nobile"
+            buy: 10000000
+            type: "balance"
+            cmds:
+              - "setgroup {player} Nobile"
+          - name: "Star (Permanent)"
+            image: ""
+            perm: "core.rank.star"
+            buy: 1000000000
+            type: "balance"
+            cmds:
+              - "setgroup {player} Star"
+...

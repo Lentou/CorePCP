@@ -1,0 +1,42 @@
+---
+# CorePCP Route Configuration
+group:
+  Administrator: ["§cAdministrator", "§cAD"]
+  Executive: ["§cExecutive Manager", "§dEM"]
+  Gamemaster: ["§aGame Master", "§aGM"]
+  Moderator: ["§bCommunity Moderator", "§bCM"]
+  Architect: ["§9World Architect", "§9WA"]
+  Designer: ["§eGraphics Designer", "§eGD"]
+  Star: ["§dStar", "§dSR"]
+  Creator: ["§cContent §fCreator", "§cC§fC"]
+  Archon: ["§6Archon", "§6AR"]
+  Dominus: ["§3Dominus", "§3DS"]
+  Vidame: ["§5Vidame", "§5VI"]
+  Nobile: ["§eNobile", "§eNB"]
+  Esquire: ["§fEsquire", "§fE"]
+  Serf: ["§7Serf", "§7S"]
+
+elo:
+  Iron: ["§fIron", "§f☫"]
+  Silver: ["§7Silver", "§7☫"]
+  Gold: ["§6Gold", "§6☫"]
+  Platinum: ["§3Platinum", "§3☫"]
+  Titanium: ["§eTitanium", "§e☫"]
+  Plutonium: ["§bPlutonium", "§b☫"]
+
+rank:
+  Novice: "§7Novice" #1
+  Apprentice: "§3Apprentice" #2
+  Member: "§2Member" #3
+  Truce: "§1Truce" #4
+  Adept: "§bAdept" #5
+  Expert: "§aExpert" #6
+  Master: "§6Master" #7
+  Glorious: "§eGlorious" #8
+  Veteran: "§fVeteran" #9
+  Genesis: "§dGenesis" #10
+  Prominence: "§cProminence" #11
+  Exousia: "§9Exousia" #12
+  
+
+...

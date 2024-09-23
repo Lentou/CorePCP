@@ -1,0 +1,54 @@
+---
+# CorePCP District Configuration
+district:
+  prefix: " §l§8«§r§9District§l§8»§r§7"
+  desc: "§fthe domain of pocketpinas"
+  text:
+    usage: "{prefix} Usage: §b/dist <towny|plots>"
+    exists: "{prefix} §b{type} §7is not registered."
+    notexists: "{prefix} World doesnt exists"
+
+list:
+  towny:
+    title: "§lTowny"
+    button: ["§0Towny\n§7Tap to Teleport", -1, ""]
+    header: ["§eWelcome to", "§l§aTOWNY"]
+    teleport: ["pcp-faction-spawn", true, 190, 320, 320]
+    content:
+      - "§l§aTOWNY§r"
+      - ""
+      - " §7Towny is a Domain of Goverment where "
+      - " §7you can Claim a Chunk and Build Towns."
+      - ""
+      - " §aFeatures:"
+      - " §7- Levels and Elo's"
+      - " §7- Mines and Mob Areas"
+      - " §7- Rank Up and Quest"
+      - " §7- Town Trade & War"
+      - " §7- Pvp Arena"
+      - " §7- Companions or Pets"
+      - ""
+      - " §7Only at §fPocket§bPinas"
+      - ""
+      - " §7Vote Us at §bhttps://web.pocketpinas.cf"
+  plots:
+    title: "§lPlots"
+    button: ["§0Plots\n§7Tap to Teleport", -1, ""]
+    header: ["§eWelcome to", "§l§bPLOTS"]
+    teleport: ["pcpplots", true, 190, 320, 320]
+    content:
+      - "§l§bPLOTS§r"
+      - ""
+      - " §7Plots is a Domain of Creative Minds where"
+      - " §7you can build and claim plots with a twist"
+      - " §7of Roleplay and Imaginations."
+      - ""
+      - " §bFeatures:"
+      - " §7- Roles and Icons"
+      - " §7- Spouse or Couples"
+      - " §7- Creative Plots"
+      - " §7- Safe from Griefers"
+      - ""
+      - " §7Only at §fPocket§bPinas"
+      - ""
+      - " §7Vote Us at §bhttps://web.pocketpinas.cf"

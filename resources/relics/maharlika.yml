@@ -1,0 +1,113 @@
+title: "§r§l§6Maharlika's Fortune"
+rate: 10
+level_requirement: 80
+loots:
+  Bundle of Fortune:
+    type: 'item'
+    items:
+      diamond:
+        name: "§r§l§8>> §r§bFortune of Diamonds §l§8<<§r"
+        id: 264
+        meta: 0
+        amount: 64
+        enchantments: []
+      golds:
+        name: "§r§l§8>> §r§eFortune of Golds §l§8<<§r"
+        id: 266
+        meta: 0
+        amount: 64
+        enchantments: []
+      emerald:
+        name: "§r§l§8>> §r§aFortune of Emeralds §l§8<<§r"
+        id: 388
+        meta: 0
+        amount: 64
+        enchantments: []
+      iron:
+        name: "§r§l§8>> §r§fFortune of Irons §l§8<<§r"
+        id: 265
+        meta: 0
+        amount: 64
+        enchantments: []
+  Fortune Blocks:
+    type: 'item'
+    items:
+      diamond:
+        name: "§r§l§8>> §r§bFortune Block of Diamonds §l§8<<§r"
+        id: 57
+        meta: 0
+        amount: 32
+        enchantments: []
+      golds:
+        name: "§r§l§8>> §r§eFortune Block of Golds §l§8<<§r"
+        id: 41
+        meta: 0
+        amount: 32
+        enchantments: []
+      emerald:
+        name: "§r§l§8>> §r§aFortune Block of Emeralds §l§8<<§r"
+        id: 133
+        meta: 0
+        amount: 32
+        enchantments: []
+      iron:
+        name: "§r§l§8>> §r§fFortune Block of Irons §l§8<<§r"
+        id: 42
+        meta: 0
+        amount: 32
+        enchantments: []
+  Balance Unlimited:
+    type: 'cmd'
+    commands:
+      - 'int %player% +bal 200000 1000000'
+      - 'grant %player% exp 12034'
+  Shard Fragment III:
+    type: 'item'
+    items:
+      helmet:
+        name: "§r§l§8>> §r§dShard Helmet §l§8<<§r"
+        id: 310
+        meta: 0
+        amount: 1
+        enchantments:
+          protection: 7
+          fire_protection: 3
+      chestplate:
+        name: "§r§l§8>> §r§dShard Chestplate §l§8<<§r"
+        id: 311
+        meta: 0
+        amount: 10
+        enchantments:
+          protection: 7
+          fire_protection: 3
+      gapple:
+        name: "§r§l§8>> §r§dDemon Fruit §l§8<<§r"
+        id: 466
+        meta: 0
+        amount: 32
+        enchantments: []
+  Shard Fragment IV:
+    type: 'item'
+    items:
+      leggings:
+        name: "§r§l§8>> §r§dShard Leggings §l§8<<§r"
+        id: 312
+        meta: 0
+        amount: 1
+        enchantments:
+          protection: 7
+          fire_protection: 3
+      boots:
+        name: "§r§l§8>> §r§dShard Boots §l§8<<§r"
+        id: 313
+        meta: 0
+        amount: 10
+        enchantments:
+          protection: 7
+          fire_protection: 3
+      gapple:
+        name: "§r§l§8>> §r§dDemon Fruit §l§8<<§r"
+        id: 466
+        meta: 0
+        amount: 32
+        enchantments: []

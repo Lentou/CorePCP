@@ -1,0 +1,11 @@
+---
+# CorePCP District Configuration
+text:
+  root: " §l§8«§r§9Warp§l§8»§r§7"
+  desc: "a twist or distortion in the shape or form of something"
+
+titles:
+  hub: ["§bHub", "§fTeleport"]
+  spawn: ["§aSpawn", "§fTeleported"]
+
+

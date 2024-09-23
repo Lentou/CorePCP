@@ -1,0 +1,1997 @@
+---
+text:
+  prefix: " §l§8«§r§9Kits§l§8»§r§7"
+  enable: true
+  desc: "§fgear or equiptment loot with tons of enchantment items"
+  worlds: ["pcp-town", "pcp-forest", "pcp-city", "pcp-wall"]
+  kit:
+    perm: "{prefix} You dont have permission to {type} this kit."
+    claim: "{prefix} You successfully claimed the kit {kit}."
+    space: "{prefix} You dont have space in your inventory!"
+    open: "{prefix} You open the kit {kit}."
+    empty: "{prefix} This category is empty!"
+
+form:
+  title: "§lKits"
+  button:
+    get: ["§7Get Kit\n§0Tap to Get", 0, "textures/ui/inventory_icon"]
+
+#kits.category.kits.kit.perm
+kits:
+  ascent:
+    name: "§lAscendant Section"
+    image: "textures/ui/icon_best3"
+    kits: #todo
+      novice: #"§7Novice" #1 !
+        perm: "kit.novice"
+        kit:
+          name: "§r§l§8>> §r§7Novice §fInsignia §l§8<<§r"
+          chest: "421:0"
+        button:
+          name: "§7Novice §fInsignia\n§0Tap to Get"
+          image: "textures/items/name_tag"
+        lore:
+          - ""
+          - "§r§7Novice §fInsignia"
+          - "§r§7- they say that when you open this kit,"
+          - "§r§7- you will be rewarded with strength"
+          - "§r§7- and equipment which comes from a unknown god."
+          - ""
+          - "§r§fContains:"
+          - "§r§7- §fLvl §b1 §aEnchant Gear"
+          - "§r§7- §aConsumables"
+          - ""
+        armour:
+          helmet:
+            id: 310
+            meta: 0
+            name: "§r§l§8>> §r§7Novice §fHelm §l§8<<§r"
+            lore:
+              - ""
+              - "§r§7Novice §fHelm"
+              - "§r§7- you will protected"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 1
+              - id: 0
+                level: 1
+          chestplate:
+            id: 311
+            meta: 0
+            name: "§r§l§8>> §r§7Novice §fTop §l§8<<§r"
+            lore:
+              - ""
+              - "§r§7Novice §fTop"
+              - "§r§7- you will vanished"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 1
+              - id: 0
+                level: 1
+          leggings:
+            id: 312
+            meta: 0
+            name: "§r§l§8>> §r§7Novice §fBottom §l§8<<§r"
+            lore:
+              - ""
+              - "§r§7Novice §fBottom"
+              - "§r§7- you will granted boost"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 1
+              - id: 0
+                level: 1
+          boots:
+            id: 313
+            meta: 0
+            name: "§r§l§8>> §r§7Novice §fBoots §l§8<<§r"
+            lore:
+              - ""
+              - "§r§7Novice §fBoots"
+              - "§r§7- you will granted speed"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 1
+              - id: 0
+                level: 1
+        items:
+        - id: 276
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§7Novice §fSword §l§8<<§r"
+          lore:
+            - ""
+            - "§r§7Novice §fSword"
+            - "§r§7- you will granted strength"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 1
+            - id: 9
+              level: 1
+        - id: 297
+          meta: 0
+          count: 32
+          name: "§r§l§8>> §r§bBread of Life §l§8<<§r"
+        - id: 322
+          meta: 0
+          count: 16
+          name: "§r§l§8>> §r§bAngel Fruit §l§8<<§r"
+      apprentice: #"§3Apprentice" #2 !
+        perm: "kit.apprentice"
+        kit:
+          name: "§r§l§8>> §r§3Apprentice §fInsignia §l§8<<§r"
+          chest: "421:0"
+        button:
+          name: "§3Apprentice §fInsignia\n§0Tap to Get"
+          image: "textures/items/name_tag"
+        lore:
+          - ""
+          - "§r§3Apprentice §fInsignia"
+          - "§r§7- they say that when you open this kit,"
+          - "§r§7- you will be rewarded with strength"
+          - "§r§7- and equipment which comes from a unknown god."
+          - ""
+          - "§r§fContains:"
+          - "§r§7- §fLvl §b2 §aEnchant Gear"
+          - "§r§7- §aConsumables"
+          - ""
+        armour:
+          helmet:
+            id: 310
+            meta: 0
+            name: "§r§l§8>> §r§3Apprentice §fHelm §l§8<<§r"
+            lore:
+              - ""
+              - "§r§3Apprentice §fHelm"
+              - "§r§7- you will protected"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 2
+              - id: 0
+                level: 2
+          chestplate:
+            id: 311
+            meta: 0
+            name: "§r§l§8>> §r§3Apprentice §fTop §l§8<<§r"
+            lore:
+              - ""
+              - "§r§3Apprentice §fTop"
+              - "§r§7- you will vanished"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 2
+              - id: 0
+                level: 2
+          leggings:
+            id: 312
+            meta: 0
+            name: "§r§l§8>> §r§3Apprentice §fBottom §l§8<<§r"
+            lore:
+              - ""
+              - "§r§3Apprentice §fBottom"
+              - "§r§7- you will granted boost"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 2
+              - id: 0
+                level: 2
+          boots:
+            id: 313
+            meta: 0
+            name: "§r§l§8>> §r§3Apprentice §fBoots §l§8<<§r"
+            lore:
+              - ""
+              - "§r§3Apprentice §fBoots"
+              - "§r§7- you will granted speed"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 2
+              - id: 0
+                level: 2
+        items:
+        - id: 276
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§3Apprentice §fBlade §l§8<<§r"
+          lore:
+            - ""
+            - "§r§3Apprentice §fBlade"
+            - "§r§7- you will granted strength"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 2
+            - id: 9
+              level: 2
+        - id: 297
+          meta: 0
+          count: 32
+          name: "§r§l§8>> §r§bBread of Life §l§8<<§r"
+        - id: 322
+          meta: 0
+          count: 32
+          name: "§r§l§8>> §r§bAngel Fruit §l§8<<§r"
+      member: #"§2Member" #3 !
+        perm: "kit.member"
+        kit:
+          name: "§r§l§8>> §r§2Member §fInsignia §l§8<<§r"
+          chest: "421:0"
+        button:
+          name: "§2Member §fInsignia\n§0Tap to Get"
+          image: "textures/items/name_tag"
+        lore:
+          - ""
+          - "§r§2Member §fInsignia"
+          - "§r§7- they say that when you open this kit,"
+          - "§r§7- you will be rewarded with strength"
+          - "§r§7- and equipment which comes from a unknown god."
+          - ""
+          - "§r§fContains:"
+          - "§r§7- §fLvl §b3 §aEnchant Gear"
+          - "§r§7- §aConsumables"
+          - ""
+        armour:
+          helmet:
+            id: 310
+            meta: 0
+            name: "§r§l§8>> §r§2Member §fHelm §l§8<<§r"
+            lore:
+              - ""
+              - "§r§2Member §fHelm"
+              - "§r§7- you will protected"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 3
+              - id: 0
+                level: 3
+          chestplate:
+            id: 311
+            meta: 0
+            name: "§r§l§8>> §r§2Member §fTop §l§8<<§r"
+            lore:
+              - ""
+              - "§r§2Member §fTop"
+              - "§r§7- you will vanished"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 3
+              - id: 0
+                level: 3
+          leggings:
+            id: 312
+            meta: 0
+            name: "§r§l§8>> §r§2Member §fBottom §l§8<<§r"
+            lore:
+              - ""
+              - "§r§2Member §fBottom"
+              - "§r§7- you will granted boost"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 3
+              - id: 0
+                level: 3
+          boots:
+            id: 313
+            meta: 0
+            name: "§r§l§8>> §r§2Member §fBoots §l§8<<§r"
+            lore:
+              - ""
+              - "§r§2Member §fBoots"
+              - "§r§7- you will granted speed"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 3
+              - id: 0
+                level: 3
+        items:
+        - id: 276
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§2Member §fClaymore §l§8<<§r"
+          lore:
+            - ""
+            - "§r§2Member §fClaymore"
+            - "§r§7- you will granted strength"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 3
+            - id: 9
+              level: 3
+        - id: 297
+          meta: 0
+          count: 32
+          name: "§r§l§8>> §r§bBread of Life §l§8<<§r"
+        - id: 322
+          meta: 0
+          count: 64
+          name: "§r§l§8>> §r§bAngel Fruit §l§8<<§r"
+      truce: #"§1Truce" #4 !!
+        perm: "kit.truce"
+        kit:
+          name: "§r§l§8>> §r§1Truce §fInsignia §l§8<<§r"
+          chest: "421:0"
+        button:
+          name: "§1Truce §fInsignia\n§0Tap to Get"
+          image: "textures/items/name_tag"
+        lore:
+          - ""
+          - "§r§1Truce §fInsignia"
+          - "§r§7- they say that when you open this kit,"
+          - "§r§7- you will be rewarded with strength"
+          - "§r§7- and equipment which comes from a unknown god."
+          - ""
+          - "§r§fContains:"
+          - "§r§7- §fLvl §b4 §aEnchant Gear"
+          - "§r§7- §aConsumables"
+          - ""
+        armour:
+          helmet:
+            id: 310
+            meta: 0
+            name: "§r§l§8>> §r§1Truce §fHelm §l§8<<§r"
+            lore:
+              - ""
+              - "§r§1Truce §fHelm"
+              - "§r§7- you will protected"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 4
+              - id: 0
+                level: 4
+              - id: 1
+                level: 1
+          chestplate:
+            id: 311
+            meta: 0
+            name: "§r§l§8>> §r§1Truce §fTop §l§8<<§r"
+            lore:
+              - ""
+              - "§r§1Truce §fTop"
+              - "§r§7- you will vanished"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 4
+              - id: 0
+                level: 4
+              - id: 1
+                level: 1
+          leggings:
+            id: 312
+            meta: 0
+            name: "§r§l§8>> §r§1Truce §fBottom §l§8<<§r"
+            lore:
+              - ""
+              - "§r§1Truce §fBottom"
+              - "§r§7- you will granted boost"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 4
+              - id: 0
+                level: 4
+              - id: 1
+                level: 1
+          boots:
+            id: 313
+            meta: 0
+            name: "§r§l§8>> §r§1Truce §fBoots §l§8<<§r"
+            lore:
+              - ""
+              - "§r§1Truce §fBoots"
+              - "§r§7- you will granted speed"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 4
+              - id: 0
+                level: 4
+              - id: 1
+                level: 1
+        items:
+        - id: 276
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§1Truce §fHalberd §l§8<<§r"
+          lore:
+            - ""
+            - "§r§1Truce §fHalberd"
+            - "§r§7- you will granted strength"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 4
+            - id: 9
+              level: 4
+            - id: 13
+              level: 1
+        - id: 297
+          meta: 0
+          count: 64
+          name: "§r§l§8>> §r§bBread of Life §l§8<<§r"
+        - id: 322
+          meta: 0
+          count: 64
+          name: "§r§l§8>> §r§bAngel Fruit §l§8<<§r"
+      adept: #"§bAdept" #5 !!
+        perm: "kit.adept"
+        kit:
+          name: "§r§l§8>> §r§bAdept §fInsignia §l§8<<§r"
+          chest: "421:0"
+        button:
+          name: "§bAdept §fInsignia\n§0Tap to Get"
+          image: "textures/items/name_tag"
+        lore:
+          - ""
+          - "§r§bAdept §fInsignia"
+          - "§r§7- they say that when you open this kit,"
+          - "§r§7- you will be rewarded with strength"
+          - "§r§7- and equipment which comes from a unknown god."
+          - ""
+          - "§r§fContains:"
+          - "§r§7- §fLvl §b5 §aEnchant Gear"
+          - "§r§7- §aConsumables"
+          - ""
+        armour:
+          helmet:
+            id: 310
+            meta: 0
+            name: "§r§l§8>> §r§bAdept §fHelm §l§8<<§r"
+            lore:
+              - ""
+              - "§r§bAdept §fHelm"
+              - "§r§7- you will protected"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 5
+              - id: 0
+                level: 5
+              - id: 1
+                level: 2
+          chestplate:
+            id: 311
+            meta: 0
+            name: "§r§l§8>> §r§bAdept §fTop §l§8<<§r"
+            lore:
+              - ""
+              - "§r§bAdept §fTop"
+              - "§r§7- you will vanished"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 5
+              - id: 0
+                level: 5
+              - id: 1
+                level: 2
+          leggings:
+            id: 312
+            meta: 0
+            name: "§r§l§8>> §r§bAdept §fBottom §l§8<<§r"
+            lore:
+              - ""
+              - "§r§bAdept §fBottom"
+              - "§r§7- you will granted boost"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 5
+              - id: 0
+                level: 5
+              - id: 1
+                level: 2
+          boots:
+            id: 313
+            meta: 0
+            name: "§r§l§8>> §r§bAdept §fBoots §l§8<<§r"
+            lore:
+              - ""
+              - "§r§bAdept §fBoots"
+              - "§r§7- you will granted speed"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 5
+              - id: 0
+                level: 5
+              - id: 1
+                level: 2
+        items:
+        - id: 276
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§bAdept §fScimitar §l§8<<§r"
+          lore:
+            - ""
+            - "§r§bAdept §fScimitar"
+            - "§r§7- you will granted strength"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 5
+            - id: 9
+              level: 5
+            - id: 13
+              level: 2
+        - id: 297
+          meta: 0
+          count: 64
+          name: "§r§l§8>> §r§bBread of Life §l§8<<§r"
+        - id: 322
+          meta: 0
+          count: 64
+          name: "§r§l§8>> §r§bAngel Fruit §l§8<<§r"
+        - id: 466
+          meta: 0
+          count: 5
+          name: "§r§l§8>> §r§bDevil Fruit §l§8<<§r"
+      expert: #"§aExpert" #6 !!
+        perm: "kit.expert"
+        kit:
+          name: "§r§l§8>> §r§aExpert §fInsignia §l§8<<§r"
+          chest: "421:0"
+        button:
+          name: "§aExpert §fInsignia\n§0Tap to Get"
+          image: "textures/items/name_tag"
+        lore:
+          - ""
+          - "§r§aExpert §fInsignia"
+          - "§r§7- they say that when you open this kit,"
+          - "§r§7- you will be rewarded with strength"
+          - "§r§7- and equipment which comes from a unknown god."
+          - ""
+          - "§r§fContains:"
+          - "§r§7- §fLvl §b6 §aEnchant Gear"
+          - "§r§7- §aConsumables"
+          - ""
+        armour:
+          helmet:
+            id: 310
+            meta: 0
+            name: "§r§l§8>> §r§aExpert §fHelm §l§8<<§r"
+            lore:
+              - ""
+              - "§r§aExpert §fHelm"
+              - "§r§7- you will protected"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 6
+              - id: 0
+                level: 6
+              - id: 1
+                level: 3
+          chestplate:
+            id: 311
+            meta: 0
+            name: "§r§l§8>> §r§aExpert §fTop §l§8<<§r"
+            lore:
+              - ""
+              - "§r§aExpert §fTop"
+              - "§r§7- you will vanished"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 6
+              - id: 0
+                level: 6
+              - id: 1
+                level: 3
+          leggings:
+            id: 312
+            meta: 0
+            name: "§r§l§8>> §r§aExpert §fBottom §l§8<<§r"
+            lore:
+              - ""
+              - "§r§aExpert §fBottom"
+              - "§r§7- you will granted boost"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 6
+              - id: 0
+                level: 6
+              - id: 1
+                level: 3
+          boots:
+            id: 313
+            meta: 0
+            name: "§r§l§8>> §r§aExpert §fBoots §l§8<<§r"
+            lore:
+              - ""
+              - "§r§aExpert §fBoots"
+              - "§r§7- you will granted speed"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 6
+              - id: 0
+                level: 6
+              - id: 1
+                level: 3
+        items:
+        - id: 276
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§aExpert §fGreatsword §l§8<<§r"
+          lore:
+            - ""
+            - "§r§aExpert §fGreatsword"
+            - "§r§7- you will granted strength"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 6
+            - id: 9
+              level: 6
+            - id: 13
+              level: 3
+        - id: 297
+          meta: 0
+          count: 64
+          name: "§r§l§8>> §r§bBread of Life §l§8<<§r"
+        - id: 322
+          meta: 0
+          count: 64
+          name: "§r§l§8>> §r§bAngel Fruit §l§8<<§r"
+        - id: 466
+          meta: 0
+          count: 10
+          name: "§r§l§8>> §r§bDevil Fruit §l§8<<§r"
+      master: #"§6Master" #7 !!!
+        perm: "kit.master"
+        kit:
+          name: "§r§l§8>> §r§6Master §fInsignia §l§8<<§r"
+          chest: "421:0"
+        button:
+          name: "§6Master §fInsignia\n§0Tap to Get"
+          image: "textures/items/name_tag"
+        lore:
+          - ""
+          - "§r§6Master §fInsignia"
+          - "§r§7- they say that when you open this kit,"
+          - "§r§7- you will be rewarded with strength"
+          - "§r§7- and equipment which comes from a unknown god."
+          - ""
+          - "§r§fContains:"
+          - "§r§7- §fLvl §b7 §aEnchant Gear"
+          - "§r§7- §aConsumables"
+          - ""
+        armour:
+          helmet:
+            id: 310
+            meta: 0
+            name: "§r§l§8>> §r§6Master §fHelm §l§8<<§r"
+            lore:
+              - ""
+              - "§r§6Master §fHelm"
+              - "§r§7- you will protected"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 7
+              - id: 0
+                level: 7
+              - id: 1
+                level: 4
+              - id: 3
+                level: 1
+          chestplate:
+            id: 311
+            meta: 0
+            name: "§r§l§8>> §r§6Master §fTop §l§8<<§r"
+            lore:
+              - ""
+              - "§r§6Master §fTop"
+              - "§r§7- you will vanished"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 7
+              - id: 0
+                level: 7
+              - id: 1
+                level: 4
+              - id: 3
+                level: 1
+          leggings:
+            id: 312
+            meta: 0
+            name: "§r§l§8>> §r§6Master §fBottom §l§8<<§r"
+            lore:
+              - ""
+              - "§r§6Master §fBottom"
+              - "§r§7- you will granted boost"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 7
+              - id: 0
+                level: 7
+              - id: 1
+                level: 4
+              - id: 3
+                level: 1
+          boots:
+            id: 313
+            meta: 0
+            name: "§r§l§8>> §r§6Master §fBoots §l§8<<§r"
+            lore:
+              - ""
+              - "§r§6Master §fBoots"
+              - "§r§7- you will granted speed"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 7
+              - id: 0
+                level: 7
+              - id: 1
+                level: 4
+              - id: 3
+                level: 1
+        items:
+        - id: 276
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§6Master §fRapier §l§8<<§r"
+          lore:
+            - ""
+            - "§r§6Master §fRapier"
+            - "§r§7- you will granted strength"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 7
+            - id: 9
+              level: 7
+            - id: 13
+              level: 4
+        - id: 297
+          meta: 0
+          count: 64
+          name: "§r§l§8>> §r§bBread of Life §l§8<<§r"
+        - id: 322
+          meta: 0
+          count: 64
+          name: "§r§l§8>> §r§bAngel Fruit §l§8<<§r"
+        - id: 466
+          meta: 0
+          count: 10
+          name: "§r§l§8>> §r§bDevil Fruit §l§8<<§r"
+      glorious: #"§eGlorious" #8 !!!
+        perm: "kit.glorious"
+        kit:
+          name: "§r§l§8>> §r§eGlorious §fInsignia §l§8<<§r"
+          chest: "421:0"
+        button:
+          name: "§eGlorious §fInsignia\n§0Tap to Get"
+          image: "textures/items/name_tag"
+        lore:
+          - ""
+          - "§r§eGlorious §fInsignia"
+          - "§r§7- they say that when you open this kit,"
+          - "§r§7- you will be rewarded with strength"
+          - "§r§7- and equipment which comes from a unknown god."
+          - ""
+          - "§r§fContains:"
+          - "§r§7- §fLvl §b8 §aEnchant Gear"
+          - "§r§7- §aConsumables"
+          - ""
+        armour:
+          helmet:
+            id: 310
+            meta: 0
+            name: "§r§l§8>> §r§eGlorious §fHelm §l§8<<§r"
+            lore:
+              - ""
+              - "§r§eGlorious §fHelm"
+              - "§r§7- you will protected"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 8
+              - id: 0
+                level: 8
+              - id: 1
+                level: 5
+              - id: 3
+                level: 2
+          chestplate:
+            id: 311
+            meta: 0
+            name: "§r§l§8>> §r§eGlorious §fTop §l§8<<§r"
+            lore:
+              - ""
+              - "§r§eGlorious §fTop"
+              - "§r§7- you will vanished"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 8
+              - id: 0
+                level: 8
+              - id: 1
+                level: 5
+              - id: 3
+                level: 2
+          leggings:
+            id: 312
+            meta: 0
+            name: "§r§l§8>> §r§eGlorious §fBottom §l§8<<§r"
+            lore:
+              - ""
+              - "§r§eGlorious §fBottom"
+              - "§r§7- you will granted boost"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 8
+              - id: 0
+                level: 8
+              - id: 1
+                level: 5
+              - id: 3
+                level: 2
+          boots:
+            id: 313
+            meta: 0
+            name: "§r§l§8>> §r§eGlorious §fBoots §l§8<<§r"
+            lore:
+              - ""
+              - "§r§eGlorious §fBoots"
+              - "§r§7- you will granted speed"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 8
+              - id: 0
+                level: 8
+              - id: 1
+                level: 5
+              - id: 3
+                level: 2
+        items:
+        - id: 276
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§eGlorious §fSoluna §l§8<<§r"
+          lore:
+            - ""
+            - "§r§eGlorious §fSoluna"
+            - "§r§7- you will granted strength"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 8
+            - id: 9
+              level: 8
+            - id: 13
+              level: 5
+        - id: 297
+          meta: 0
+          count: 64
+          name: "§r§l§8>> §r§bBread of Life §l§8<<§r"
+        - id: 322
+          meta: 0
+          count: 64
+          name: "§r§l§8>> §r§bAngel Fruit §l§8<<§r"
+        - id: 466
+          meta: 0
+          count: 15
+          name: "§r§l§8>> §r§bDevil Fruit §l§8<<§r"
+      veteran: #"§fVeteran" #9 !!!
+        perm: "kit.veteran"
+        kit:
+          name: "§r§l§8>> §r§fVeteran §fInsignia §l§8<<§r"
+          chest: "421:0"
+        button:
+          name: "§fVeteran §fInsignia\n§0Tap to Get"
+          image: "textures/items/name_tag"
+        lore:
+          - ""
+          - "§r§fVeteran §fInsignia"
+          - "§r§7- they say that when you open this kit,"
+          - "§r§7- you will be rewarded with strength"
+          - "§r§7- and equipment which comes from a unknown god."
+          - ""
+          - "§r§fContains:"
+          - "§r§7- §fLvl §b9 §aEnchant Gear"
+          - "§r§7- §aConsumables"
+          - ""
+        armour:
+          helmet:
+            id: 310
+            meta: 0
+            name: "§r§l§8>> §r§fVeteran §fHelm §l§8<<§r"
+            lore:
+              - ""
+              - "§r§fVeteran §fHelm"
+              - "§r§7- you will protected"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 9
+              - id: 0
+                level: 9
+              - id: 1
+                level: 6
+              - id: 3
+                level: 3
+          chestplate:
+            id: 311
+            meta: 0
+            name: "§r§l§8>> §r§fVeteran §fTop §l§8<<§r"
+            lore:
+              - ""
+              - "§r§fVeteran §fTop"
+              - "§r§7- you will vanished"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 9
+              - id: 0
+                level: 9
+              - id: 1
+                level: 6
+              - id: 3
+                level: 3
+          leggings:
+            id: 312
+            meta: 0
+            name: "§r§l§8>> §r§fVeteran §fBottom §l§8<<§r"
+            lore:
+              - ""
+              - "§r§fVeteran §fBottom"
+              - "§r§7- you will granted boost"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 9
+              - id: 0
+                level: 9
+              - id: 1
+                level: 6
+              - id: 3
+                level: 3
+          boots:
+            id: 313
+            meta: 0
+            name: "§r§l§8>> §r§fVeteran §fBoots §l§8<<§r"
+            lore:
+              - ""
+              - "§r§fVeteran §fBoots"
+              - "§r§7- you will granted speed"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 9
+              - id: 0
+                level: 9
+              - id: 1
+                level: 6
+              - id: 3
+                level: 3
+        items:
+        - id: 276
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§fVeteran §fGlaive §l§8<<§r"
+          lore:
+            - ""
+            - "§r§fVeteran §fGlaive"
+            - "§r§7- you will granted strength"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 9
+            - id: 9
+              level: 9
+            - id: 13
+              level: 5
+        - id: 297
+          meta: 0
+          count: 64
+          name: "§r§l§8>> §r§bBread of Life §l§8<<§r"
+        - id: 322
+          meta: 0
+          count: 64
+          name: "§r§l§8>> §r§bAngel Fruit §l§8<<§r"
+        - id: 466
+          meta: 0
+          count: 20
+          name: "§r§l§8>> §r§bDevil Fruit §l§8<<§r"
+      genesis: #"§dGenesis" #10 !!!!
+        perm: "kit.genesis"
+        kit:
+          name: "§r§l§8>> §r§dGenesis §fInsignia §l§8<<§r"
+          chest: "421:0"
+        button:
+          name: "§dGenesis §fInsignia\n§0Tap to Get"
+          image: "textures/items/name_tag"
+        lore:
+          - ""
+          - "§r§dGenesis §fInsignia"
+          - "§r§7- they say that when you open this kit,"
+          - "§r§7- you will be rewarded with strength"
+          - "§r§7- and equipment which comes from a unknown god."
+          - ""
+          - "§r§fContains:"
+          - "§r§7- §fLvl §b10 §aEnchant Gear"
+          - "§r§7- §aConsumables"
+          - ""
+        armour:
+          helmet:
+            id: 310
+            meta: 0
+            name: "§r§l§8>> §r§dGenesis §fHelm §l§8<<§r"
+            lore:
+              - ""
+              - "§r§dGenesis §fHelm"
+              - "§r§7- you will protected"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 10
+              - id: 0
+                level: 10
+              - id: 1
+                level: 7
+              - id: 3
+                level: 4
+              - id: 4
+                level: 1
+          chestplate:
+            id: 311
+            meta: 0
+            name: "§r§l§8>> §r§dGenesis §fTop §l§8<<§r"
+            lore:
+              - ""
+              - "§r§dGenesis §fTop"
+              - "§r§7- you will vanished"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 10
+              - id: 0
+                level: 10
+              - id: 1
+                level: 7
+              - id: 3
+                level: 4
+              - id: 4
+                level: 1
+          leggings:
+            id: 312
+            meta: 0
+            name: "§r§l§8>> §r§dGenesis §fBottom §l§8<<§r"
+            lore:
+              - ""
+              - "§r§dGenesis §fBottom"
+              - "§r§7- you will granted boost"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 10
+              - id: 0
+                level: 10
+              - id: 1
+                level: 7
+              - id: 3
+                level: 4
+              - id: 4
+                level: 1
+          boots:
+            id: 313
+            meta: 0
+            name: "§r§l§8>> §r§dGenesis §fBoots §l§8<<§r"
+            lore:
+              - ""
+              - "§r§dGenesis §fBoots"
+              - "§r§7- you will granted speed"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 10
+              - id: 0
+                level: 10
+              - id: 1
+                level: 7
+              - id: 3
+                level: 4
+              - id: 4
+                level: 1
+        items:
+        - id: 276
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§dGenesis §fRift §l§8<<§r"
+          lore:
+            - ""
+            - "§r§dGenesis §fRift"
+            - "§r§7- you will granted strength"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 10
+            - id: 9
+              level: 10
+            - id: 13
+              level: 5
+            - id: 12
+              level: 1
+        - id: 297
+          meta: 0
+          count: 64
+          name: "§r§l§8>> §r§bBread of Life §l§8<<§r"
+        - id: 322
+          meta: 0
+          count: 64
+          name: "§r§l§8>> §r§bAngel Fruit §l§8<<§r"
+        - id: 466
+          meta: 0
+          count: 25
+          name: "§r§l§8>> §r§bDevil Fruit §l§8<<§r"
+      prominence: #"§9Prominence" #11 !!!!
+        perm: "kit.prominence"
+        kit:
+          name: "§r§l§8>> §r§9Prominence §fInsignia §l§8<<§r"
+          chest: "421:0"
+        button:
+          name: "§9Prominence §fInsignia\n§0Tap to Get"
+          image: "textures/items/name_tag"
+        lore:
+          - ""
+          - "§r§9Prominence §fInsignia"
+          - "§r§7- they say that when you open this kit,"
+          - "§r§7- you will be rewarded with strength"
+          - "§r§7- and equipment which comes from a unknown god."
+          - ""
+          - "§r§fContains:"
+          - "§r§7- §fLvl §b10 §aEnchant Gear"
+          - "§r§7- §aConsumables"
+          - ""
+        armour:
+          helmet:
+            id: 310
+            meta: 0
+            name: "§r§l§8>> §r§9Prominence §fHelm §l§8<<§r"
+            lore:
+              - ""
+              - "§r§9Prominence §fHelm"
+              - "§r§7- you will protected"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 10
+              - id: 0
+                level: 10
+              - id: 1
+                level: 8
+              - id: 3
+                level: 5
+              - id: 4
+                level: 2
+          chestplate:
+            id: 311
+            meta: 0
+            name: "§r§l§8>> §r§9Prominence §fTop §l§8<<§r"
+            lore:
+              - ""
+              - "§r§9Prominence §fTop"
+              - "§r§7- you will vanished"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 10
+              - id: 0
+                level: 10
+              - id: 1
+                level: 8
+              - id: 3
+                level: 5
+              - id: 4
+                level: 2
+          leggings:
+            id: 312
+            meta: 0
+            name: "§r§l§8>> §r§9Prominence §fBottom §l§8<<§r"
+            lore:
+              - ""
+              - "§r§9Prominence §fBottom"
+              - "§r§7- you will granted boost"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 10
+              - id: 0
+                level: 10
+              - id: 1
+                level: 8
+              - id: 3
+                level: 5
+              - id: 4
+                level: 2
+          boots:
+            id: 313
+            meta: 0
+            name: "§r§l§8>> §r§9Prominence §fBoots §l§8<<§r"
+            lore:
+              - ""
+              - "§r§9Prominence §fBoots"
+              - "§r§7- you will granted speed"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 10
+              - id: 0
+                level: 10
+              - id: 1
+                level: 8
+              - id: 3
+                level: 5
+              - id: 4
+                level: 2
+        items:
+        - id: 276
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§9Prominence §fExpunge §l§8<<§r"
+          lore:
+            - ""
+            - "§r§9Prominence §fExpunge"
+            - "§r§7- you will granted strength"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 10
+            - id: 9
+              level: 10
+            - id: 13
+              level: 5
+            - id: 12
+              level: 2
+        - id: 297
+          meta: 0
+          count: 64
+          name: "§r§l§8>> §r§bBread of Life §l§8<<§r"
+        - id: 322
+          meta: 0
+          count: 64
+          name: "§r§l§8>> §r§bAngel Fruit §l§8<<§r"
+        - id: 466
+          meta: 0
+          count: 30
+          name: "§r§l§8>> §r§bDevil Fruit §l§8<<§r"
+      exousia: #"§cExousia" #12 !!!!
+        perm: "kit.exousia"
+        kit:
+          name: "§r§l§8>> §r§cExousia §fInsignia §l§8<<§r"
+          chest: "421:0"
+        button:
+          name: "§cExousia §fInsignia\n§0Tap to Get"
+          image: "textures/items/name_tag"
+        lore:
+          - ""
+          - "§r§cExousia §fInsignia"
+          - "§r§7- they say that when you open this kit,"
+          - "§r§7- you will be rewarded with strength"
+          - "§r§7- and equipment which comes from a unknown god."
+          - ""
+          - "§r§fContains:"
+          - "§r§7- §fLvl §b10 §aEnchant Gear"
+          - "§r§7- §aConsumables"
+          - ""
+        armour:
+          helmet:
+            id: 310
+            meta: 0
+            name: "§r§l§8>> §r§cExousia §fHelm §l§8<<§r"
+            lore:
+              - ""
+              - "§r§cExousia §fHelm"
+              - "§r§7- you will protected"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 10
+              - id: 0
+                level: 10
+              - id: 1
+                level: 9
+              - id: 3
+                level: 6
+              - id: 4
+                level: 3
+          chestplate:
+            id: 311
+            meta: 0
+            name: "§r§l§8>> §r§cExousia §fTop §l§8<<§r"
+            lore:
+              - ""
+              - "§r§cExousia §fTop"
+              - "§r§7- you will vanished"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 10
+              - id: 0
+                level: 10
+              - id: 1
+                level: 9
+              - id: 3
+                level: 6
+              - id: 4
+                level: 3
+          leggings:
+            id: 312
+            meta: 0
+            name: "§r§l§8>> §r§cExousia §fBottom §l§8<<§r"
+            lore:
+              - ""
+              - "§r§cExousia §fBottom"
+              - "§r§7- you will granted boost"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 10
+              - id: 0
+                level: 10
+              - id: 1
+                level: 9
+              - id: 3
+                level: 6
+              - id: 4
+                level: 3
+          boots:
+            id: 313
+            meta: 0
+            name: "§r§l§8>> §r§cExousia §fBoots §l§8<<§r"
+            lore:
+              - ""
+              - "§r§cExousia §fBoots"
+              - "§r§7- you will granted speed"
+              - "§r§7- and guided by unknown god"
+              - ""
+            enchantments:
+              - id: 17
+                level: 10
+              - id: 0
+                level: 10
+              - id: 1
+                level: 9
+              - id: 3
+                level: 6
+              - id: 4
+                level: 3
+        items:
+        - id: 276
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§cExousia §fTestament §l§8<<§r"
+          lore:
+            - ""
+            - "§r§cExousia §fTestament"
+            - "§r§7- you will granted strength"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 10
+            - id: 9
+              level: 10
+            - id: 13
+              level: 5
+            - id: 12
+              level: 2
+        - id: 297
+          meta: 0
+          count: 64
+          name: "§r§l§8>> §r§bBread of Life §l§8<<§r"
+        - id: 322
+          meta: 0
+          count: 64
+          name: "§r§l§8>> §r§bAngel Fruit §l§8<<§r"
+        - id: 466
+          meta: 0
+          count: 35
+          name: "§r§l§8>> §r§bDevil Fruit §l§8<<§r"
+  trial:
+    name: "§lTrial Section"
+    image: "textures/ui/icon_fall"
+    kits:
+      serf:
+        kit:
+          name: "§r§l§8>> §r§7Serf §fSack §l§8<<§r"
+          chest: "342:0"
+        button:
+          name: "§7Serf §fSack\n§0Tap to Get"
+          image: "textures/items/minecart_hopper"
+        lore:
+          - ""
+          - "§r§7Serf §fSack"
+          - "§r§7- they say that when you open this kit,"
+          - "§r§7- you will be rewarded with strength"
+          - "§r§7- and equipment which comes from a unknown god."
+          - ""
+          - "§r§fContains:"
+          - "§r§7- §fLvl §b1 §aEnchant Tools"
+          - "§r§7- §aConsumables"
+          - ""
+        items:
+        - id: 269
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§7Serf §fShovel §l§8<<§r"
+          lore:
+            - ""
+            - "§r§7Serf §fShovel"
+            - "§r§7- you will granted haste"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+          - id: 17
+            level: 1
+          - id: 15
+            level: 1
+        - id: 270
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§7Serf §fMattock §l§8<<§r"
+          lore:
+            - ""
+            - "§r§7Serf §fMattock"
+            - "§r§7- you will granted protection"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 1
+            - id: 15
+              level: 1
+        - id: 271
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§7Serf §fAxe §l§8<<§r"
+          lore:
+            - ""
+            - "§r§7Serf §fAxe"
+            - "§r§7- you will granted protection"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 1
+            - id: 15
+              level: 1
+            - id: 9
+              level: 1
+        - id: 290
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§7Serf §fHoe §l§8<<§r"
+          lore:
+            - ""
+            - "§r§7Serf §fHoe"
+            - "§r§7- you will granted fertility"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 1
+        - id: 297
+          meta: 0
+          count: 32
+          name: "§r§l§8>> §r§bBread of Life §l§8<<§r"
+      esquire:
+        perm: "kit.esquire"
+        kit:
+          name: "§r§l§8>> §r§fEsquire §fLootbag §l§8<<§r"
+          chest: "342:0"
+        button:
+          name: "§fEsquire §fLootbag\n§0Tap to Get"
+          image: "textures/items/minecart_furnace"
+        lore:
+          - ""
+          - "§r§fEsquire §fLootbag"
+          - "§r§7- they say that when you open this kit,"
+          - "§r§7- you will be rewarded with strength"
+          - "§r§7- and equipment which comes from a unknown god."
+          - ""
+          - "§r§fContains:"
+          - "§r§7- §fLvl §b2 §aEnchant Tools"
+          - "§r§7- §aConsumables"
+          - ""
+        items:
+        - id: 273
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§fEsquire §fShovel §l§8<<§r"
+          lore:
+            - ""
+            - "§r§fEsquire §fShovel"
+            - "§r§7- you will granted haste"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+          - id: 17
+            level: 2
+          - id: 15
+            level: 2
+        - id: 274
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§fEsquire §fPick §l§8<<§r"
+          lore:
+            - ""
+            - "§r§fEsquire §fPick"
+            - "§r§7- you will granted protection"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 2
+            - id: 15
+              level: 2
+        - id: 275
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§fEsquire §fAxe §l§8<<§r"
+          lore:
+            - ""
+            - "§r§fEsquire §fAxe"
+            - "§r§7- you will granted protection"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 2
+            - id: 15
+              level: 2
+            - id: 9
+              level: 2
+        - id: 291
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§fEsquire §fRake §l§8<<§r"
+          lore:
+            - ""
+            - "§r§fEsquire §fRake"
+            - "§r§7- you will granted fertility"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 2
+        - id: 297
+          meta: 0
+          count: 32
+          name: "§r§l§8>> §r§bBread of Life §l§8<<§r"
+      nobile:
+        perm: "kit.nobile"
+        kit:
+          name: "§r§l§8>> §r§eNobile §fCase §l§8<<§r"
+          chest: "342:0"
+        button:
+          name: "§eNobile §fCase\n§0Tap to Get"
+          image: "textures/items/minecart_chest"
+        lore:
+          - ""
+          - "§r§eNobile §fCase"
+          - "§r§7- they say that when you open this kit,"
+          - "§r§7- you will be rewarded with strength"
+          - "§r§7- and equipment which comes from a unknown god."
+          - ""
+          - "§r§fContains:"
+          - "§r§7- §fLvl §b3 §aEnchant Tools"
+          - "§r§7- §aConsumables"
+          - ""
+        items:
+        - id: 256
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§eNobile §fShovel §l§8<<§r"
+          lore:
+            - ""
+            - "§r§eNobile §fShovel"
+            - "§r§7- you will granted haste"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+          - id: 17
+            level: 3
+          - id: 15
+            level: 3
+        - id: 257
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§eNobile §fPick §l§8<<§r"
+          lore:
+            - ""
+            - "§r§eNobile §fPick"
+            - "§r§7- you will granted protection"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 3
+            - id: 15
+              level: 3
+        - id: 258
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§eNobile §fAxe §l§8<<§r"
+          lore:
+            - ""
+            - "§r§eNobile §fAxe"
+            - "§r§7- you will granted protection"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 3
+            - id: 15
+              level: 3
+            - id: 9
+              level: 3
+        - id: 292
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§eNobile §fHoe §l§8<<§r"
+          lore:
+            - ""
+            - "§r§eNobile §fHoe"
+            - "§r§7- you will granted fertility"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 3
+        - id: 297
+          meta: 0
+          count: 32
+          name: "§r§l§8>> §r§bBread of Life §l§8<<§r"
+  donator:
+    name: "§lDonator Section"
+    image: "textures/ui/gift_square"
+    kits:
+      # kit
+      vidame:
+        perm: "kit.vidame"
+        kit:
+          name: "§r§l§8>> §r§5Vidame §fCatalyst §l§8<<§r"
+          chest: "403:0"
+        button:
+          name: "§5Vidame §fCatalyst\n§0Tap to Get"
+          image: "textures/items/book_writable"
+        lore:
+          - ""
+          - "§r§5Vidame §fCatalyst"
+          - "§r§7- they say that when you open this kit,"
+          - "§r§7- you will be rewarded with strength"
+          - "§r§7- and equipment which comes from a unknown god."
+          - ""
+          - "§r§fContains:"
+          - "§r§7- §fLvl §b5 §aEnchant Tools"
+          - "§r§7- §aConsumables"
+          - ""
+        items:
+        - id: 277
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§5Vidame §fSpade §l§8<<§r"
+          lore:
+            - ""
+            - "§r§5Vidame §fSpade"
+            - "§r§7- you will granted haste"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+          - id: 17
+            level: 5
+          - id: 15
+            level: 5
+        - id: 278
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§5Vidame §fDriller §l§8<<§r"
+          lore:
+            - ""
+            - "§r§5Vidame §fDriller"
+            - "§r§7- you will granted protection"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 5
+            - id: 15
+              level: 5
+        - id: 279
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§5Vidame §fPoleaxe §l§8<<§r"
+          lore:
+            - ""
+            - "§r§5Vidame §fPoleaxe"
+            - "§r§7- you will granted protection"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 5
+            - id: 15
+              level: 5
+            - id: 9
+              level: 5
+        - id: 293
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§5Vidame §fRake §l§8<<§r"
+          lore:
+            - ""
+            - "§r§5Vidame §fRake"
+            - "§r§7- you will granted fertility"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 5
+        - id: 466
+          meta: 0
+          count: 5
+          name: "§r§l§8>> §r§bDemon Fruit §l§8<<§r"
+        - id: 297
+          meta: 0
+          count: 16
+          name: "§r§l§8>> §r§bBread of Life §l§8<<§r"
+      dominus:
+        perm: "kit.dominus"
+        kit:
+          name: "§r§l§8>> §r§3Dominus §fTome §l§8<<§r"
+          chest: "403:0"
+        button:
+          name: "§3Dominus §fTome\n§0Tap to Get"
+          image: "textures/items/book_enchanted"
+        lore:
+          - ""
+          - "§r§3Dominus §fTome"
+          - "§r§7- they say that when you open this kit,"
+          - "§r§7- you will be rewarded with strength"
+          - "§r§7- and equipment which comes from a unknown god."
+          - ""
+          - "§r§fContains:"
+          - "§r§7- §fLvl §b8 §aEnchant Tools"
+          - "§r§7- §aConsumables"
+          - ""
+        items:
+        - id: 277
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§3Dominus §fSpader §l§8<<§r"
+          lore:
+            - ""
+            - "§r§3Dominus §fSpader"
+            - "§r§7- you will granted haste"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+          - id: 17
+            level: 8
+          - id: 15
+            level: 8
+        - id: 278
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§3Dominus §fPicklance §l§8<<§r"
+          lore:
+            - ""
+            - "§r§3Dominus §fPicklance"
+            - "§r§7- you will granted protection"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+          - id: 17
+            level: 8
+          - id: 15
+            level: 8
+        - id: 279
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§3Dominus §fAxelerate §l§8<<§r"
+          lore:
+            - ""
+            - "§r§3Dominus §fAxelerate"
+            - "§r§7- you will granted protection"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 8
+            - id: 15
+              level: 8
+            - id: 9
+              level: 8
+        - id: 293
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§3Dominus §fScythe §l§8<<§r"
+          lore:
+            - ""
+            - "§r§3Dominus §fScythe"
+            - "§r§7- you will granted fertility"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 8
+        - id: 466
+          meta: 0
+          count: 10
+          name: "§r§l§8>> §r§bDemon Fruit §l§8<<§r"
+        - id: 297
+          meta: 0
+          count: 32
+          name: "§r§l§8>> §r§bBread of Life §l§8<<§r"
+      archon:
+        perm: "kit.archon"
+        kit:
+          name: "§r§l§8>> §r§6Archon §fBook §l§8<<§r"
+          chest: "403:0"
+        button:
+          name: "§6Archon §fBook\n§0Tap to Get"
+          image: "textures/items/book_portfolio"
+        lore:
+          - ""
+          - "§r§6Archon §fBook"
+          - "§r§7- they say that when you open this kit,"
+          - "§r§7- you will be rewarded with strength"
+          - "§r§7- and equipment which comes from a unknown god."
+          - ""
+          - "§r§fContains:"
+          - "§r§7- §fLvl §b10 §aEnchant Tools"
+          - "§r§7- §aConsumables"
+          - ""
+        items:
+        - id: 277
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§6Archon §fResentment §l§8<<§r"
+          lore:
+            - ""
+            - "§r§6Archon §fResentment"
+            - "§r§7- you will granted haste"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+          - id: 17
+            level: 10
+          - id: 15
+            level: 10
+        - id: 278
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§6Archon §fAvalanche §l§8<<§r"
+          lore:
+            - ""
+            - "§r§6Archon §fAvalanche"
+            - "§r§7- you will granted protection"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 10
+            - id: 15
+              level: 10
+        - id: 279
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§6Archon §fFlail §l§8<<§r"
+          lore:
+            - ""
+            - "§r§6Archon §fFlail"
+            - "§r§7- you will granted protection"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 10
+            - id: 15
+              level: 10
+            - id: 9
+              level: 10
+        - id: 293
+          meta: 0
+          count: 1
+          name: "§r§l§8>> §r§6Archon §fFang §l§8<<§r"
+          lore:
+            - ""
+            - "§r§6Archon §fFang"
+            - "§r§7- you will granted fertility"
+            - "§r§7- and guided by unknown god"
+            - ""
+          enchantments:
+            - id: 17
+              level: 10
+        - id: 466
+          meta: 0
+          count: 20
+          name: "§r§l§8>> §r§bDemon Fruit §l§8<<§r"
+        - id: 297
+          meta: 0
+          count: 64
+          name: "§r§l§8>> §r§bBread of Life §l§8<<§r"
+...

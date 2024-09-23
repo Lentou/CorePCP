@@ -1,0 +1,115 @@
+x1:
+  level: 5
+  title: "Wood Cutter"
+  desc: "Gather 64 Oak Planks: 54 Exp, 120 bals"
+  item: "17:0:32"
+  cmd:
+    - grant "{player}" exp 54
+    - bal add "{player}" 120
+
+x2:
+  level: 5
+  title: "Sword Crafter"
+  desc: "Craft a wooden sword: 64 exp, 75 bals"
+  item: "268:0:1"
+  cmd:
+    - grant "{player}" exp 64
+    - bal add "{player}" 75
+
+x3:
+  level: 10
+  title: "Skeleton Slayer"
+  desc: "Collect 15 Bones: 23 exp, 74 bals"
+  item: "352:0:15"
+  cmd:
+    - grant "{player}" exp 23
+    - bal add "{player}" 74
+
+x4:
+  level: 10
+  title: "Zombie Hunter"
+  desc: "Collect 20 Rotten Flesh: 50 exp, 50 bals"
+  item: "367:0:20"
+  cmd:
+    - grant "{player}" exp 50
+    - bal add "{player}" 50
+
+x5:
+  level: 15
+  title: "Wheat Farmer"
+  desc: "Gather 25 Wheats: 80 exp, 90 bals"
+  item: "296:0:25"
+  cmd:
+    - grant "{player}" exp 80
+    - bal add "{player}" 90
+
+x6:
+  level: 15
+  title: "Carrot Harvester"
+  desc: "Plant and Get 25 Carrots: 90 exp, 90 bals"
+  item: "391:0:25"
+  cmd:
+    - grant "{player}" exp 90
+    - bal add "{player}" 90
+
+x7:
+  level: 20
+  title: "Sugarcane Daddy"
+  desc: "Plant and Get 20 Sugarcane: 80 exp, 90 bals"
+  item: "338:0:10"
+  cmd:
+    - grant "{player}" exp 80
+    - bal add "{player}" 90
+x8:
+  level: 25
+  title: "Potato Lover"
+  desc: "Collect 30 Potatoes: 60 exp, 95 bals"
+  item: "392:0:30"
+  cmd:
+    - grant "{player}" exp 60
+    - bal add "{player}" 95
+
+x9:
+  level: 25
+  title: "Chicken Roaster"
+  desc: "Collect 25 Feathers: 90 exp, 250 bals"
+  item: "288:0:25"
+  cmd:
+    - grant "{player}" exp 90
+    - bal add "{player}" 250
+
+x10:
+  level: 40
+  title: "Leather Expert"
+  desc: "Collect 20 Leather from the Cow: 90 exp, 550 bals"
+  item: "334:0:20"
+  cmd:
+    - grant "{player}" exp 90
+    - bal add "{player}" 550
+
+x11:
+  level: 55
+  title: "Cactus Hitter"
+  desc: "Get 30 Cactus in the wild: 150 exp, 970 bals"
+  item: "81:0:30"
+  cmd:
+    - grant "{player}" exp 150
+    - bal add "{player}" 970
+
+x12:
+  level: 55
+  title: "Netherwart Worker"
+  desc: "Get 30 Netherwart Blocks: 250 exp, 1200 bals"
+  item: "214:0:30"
+  cmd:
+    - grant "{player}" exp 250
+    - bal add "{player}" 1200
+
+x13:
+  level: 70
+  title: "Blazing Esquire"
+  desc: "Slay and Collect 32 Blaze Rods: 450 Exp, 1,500 Bals"
+  item: "369:0:32"
+  cmd:
+    - grant "{player}" exp 340
+    - bal add "{player}" 1500

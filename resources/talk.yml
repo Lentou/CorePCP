@@ -1,0 +1,23 @@
+---
+# CorePCP District Configuration
+talk:
+  prefix: " §l§8«§r§9Talk§l§8»§r§7"
+  desc: "§ftalk someone in npc"
+  text:
+    usage: "{prefix} Usage: §b/talk <player> <npc> "
+    exists: "{prefix} §b{type} §7is not registered."
+
+prefix:
+  line: "§f------- <++--++> -------"
+
+npcs:
+  juan:
+    title: "§lJuan"
+    msg:
+      - "== ## §7Hello There My Friend! ## §7How`s Your Day? ## §7It`s Good eh? ## =="
+      - "== ## §7I Understand Your Situation My Friend! ## §7Even me I don`t know ## §7It`s up to me ## =="
+  pedro:
+    title: "§lPedro"
+    msg:
+      - "== ## §7Talk to God ## §7and Say what you want ## §7until he hear your voice! ## =="
+      - "== ## §7Forward, Filipinos, ## §7and the sun of victory ## §7will shine upon us."
